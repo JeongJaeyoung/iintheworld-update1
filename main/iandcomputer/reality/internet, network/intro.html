@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>인터넷</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="../../design-control/css/tamplet.css">
+
+    <style>
+        .first_title>li {
+            font-size: 14px;
+        }
+
+        .second_title>li {
+            font-size: 12px;
+            text-indent: 5px;
+            font-weight: bold;
+        }
+
+        .third_title>li {
+            font-size: 10px;
+            text-indent: 10px;
+        }
+
+        .fourth_title>li {
+            font-size: 8px;
+            text-indent: 15px;
+        }
+
+        .fifth {
+            font-size: 8px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>인터넷</h1>
+        </header>
+        <section class="content">
+            <nav>
+                <ul class="first_title">
+                    <li>들어가기</li><br>
+                    <li>공유기(라우터) #WAN #LAN</li>
+                    <li>NAT(Network Address Translation)</li>
+                    <li>Port</li>
+                    <li>Port Forwarding</li>
+                    <li>Dynamic address vs Static address</li>
+                    <li>DHCP(Dynamic Host Configuration Protocol)</li>
+                    <li>NAS</li>
+                    <li>Domain name</li>
+                    <li>DDNS</li>
+                    <li>http</li>
+                    <li>https</li>
+
+
+                </ul>
+
+            </nav>
+            <main>
+
+                <h2>0. 들어가기</h2>
+                <p>
+                    IPv4 : 0.0.0.0. ~ 255.255.255.255.
+                    IPv6
+                </p>
+                <p>
+                    공유기로 하나의 ip주소를 나눠쓸 수 있다.
+                </p>
+                <p>
+                    Network Address Translation
+                    Public vs Private IP Address
+                    Port forwarding
+                    Dynamic vs Static IP address
+                    Dynamic DNS
+                </p>
+
+                <h3>공유기<(=라우터)</h3>
+                <p>
+                    통신사로 부터 회선을 하나 사고
+                    그 회선을 공유기에 꽂아서(WAN에 꽂음)
+                    그러면 통신사로부터 발급받은 ip address는 공유기의 것이 됨.(public ip address)
+                    얘는 인터넷이라는 광역 네트워크(WAN : Wide Area Network)에 연결됨
+
+                    공유기는 public ip address(WAN에 꽂힌 부분)와 private ip address(LAN에 꽂힌 부분) 둘 다 가지게 됨.
+
+                    우리집 여러 기기에 연결할 수 있는 것임.(얘는 LAN에 꽂힘)
+                    내 스마트폰, 전화기, 노트북이 지역 네트워크(LAN : Local Area Network)에 묶여있는 것임.
+                    얘네는 private ip address를 가짐.
+                    private ip address는 
+                    10.0.0.0.~10.255.255.255 : 16,777,216개
+                    172.16.0.0.~172.31.255.255 : 1,048,576개
+                    192.168.0.0.~192.168.255.255 : 65536개
+                    로 쓰도록 약속되어 있음.
+                </p>
+
+                
+                <h3>NAT(Network Address Translation)</h3>
+                <p>
+                    공유기 내의 장치가
+                    private ip address와 public ip address를 상호간에 정보가 흐르도록 
+                    길을 터주는 기술임.
+                </p>
+                
+                <h3>Port</h3>
+                <p>
+                    192.168.0.0.~192.168.255.255의 65536개의 포트 중에
+                    0~1023까지는 Well-known port로서 이미 정해져 있음.
+                    22 = SSH
+                    80 = http : 컴퓨터에 웹서버를 깔면 80번 포트에 연결되도록 약속되어있음.
+                    포트에 연결하는 것을 listening한다고 함.
+                </p>
+                <p>
+                    한 컴퓨터에 웹서버를 2개 이상 사용하려면
+                    관습적으로 8000이나 8080포트에 꽂아서 사용함.
+                    꼭 그래야 하는 것은 아님.
+
+                    http://iintheworld.com:8080으로 연결시키면 8080포트로 연결되나봐.
+
+                    http://iintheworld.com:8080/index.html
+                    http://iintheworld.com:8000/index.html으로 각각 쓰면
+                    다른 서버로 연결되나봐.
+                </p>
+
+
+                <h3>Port Forwarding</h3>
+                <p>
+                    나의 컴퓨터가 서버 컴퓨터이고
+                    외부에서 내 서버 컴퓨터로 접속하려고 만드려면
+
+                    내 공유기의 public ip address가 59.6.66.237이고,
+                    내 공유기의 private ip address가 192.168.0.1이고,
+                    공유기와 연결된 내 컴퓨터의 private ip address를 192.168.0.2이라고 한다면
+
+                    외부인이 59.6.66.238:8080을 주소창에 치면
+                    내 컴퓨터의 192.168.0.2:80으로 들어오게끔 
+                    포트번호의 경로를 설정해주는 것(공유기의 외부포트는 8080으로 하고, 내부포트는 80으로 해야함)
+                    을 port forwarding이라고 함.
+
+                </p>
+
+                <h3>Dynamic address vs Static address</h3>
+                <h4>Dynamic address</h4>
+                <p>
+                    부족한 ip주소 상황을 해결해주는 기술임.
+                    모든 집집마다 ip주소를 하나씩 각각 주면 턱없이 부족함.
+                    인터넷을 안 쓰는 집에 할당된 ip address를 
+                    인터넷을 쓰려는 집에 할당시켜줌.
+                    ip address 돌려막기임.
+                </p>
+                <h4>Static address</h4>
+                <p>
+                    통신사에게 돈을 좀 더 주면 우리 집에 독점적으로 할당된 ip address를 더 줌.
+                    이게 static ip address임.
+                </p>
+
+                <h4>DHCP(Dynamic Host Configuration Protocol)</h4>
+                <p>
+                    공유기는 일반적으로 DHCP server라는 프로그램을 내장하고 있음.
+                    내 노트북이나 스마트폰 같은 곳에는 DHCP client라는 프로그램이 내장되어 있음.
+
+                    공유기의 DHCP server와 나의 노트북이나 스마트폰의 DHCP client가 서로 소통하여
+                    공유기가 나의 노트북이나 스마트폰에 ip주소(192.168.0.2., 192.168.0.3)를 할당을 해주는 것임.
+
+                    ip 대여시간이라는 것이 있어서
+                    빨리빨리 local ip address를 돌려막기 가능하게 함.
+                    동적으로 ip address를 뿌려주니까 DYNAMIC host configuration protocol이라고 함.
+                </p>
+
+                <h3>NAS</h3>
+                <h3>Domain name</h3>
+                <h3>DDNS</h3>
+                <h3>http</h3>
+                <h3>https</h3>
+
+                <h3>용어정리</h3>
+                <p>
+                    ISP : Internet Service Provider : 통신사
+                </p>
+            </main>
+            <aside>
+
+            </aside>
+        </section>
+        <footer>
+            참조 : 생활코딩 - web2 - home_server
+        </footer>
+    </div>
+</body>
+
+</html>

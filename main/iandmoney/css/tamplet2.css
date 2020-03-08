@@ -1,0 +1,445 @@
+/* COMMON */
+
+body{
+    color: #2d2d2d;
+}
+
+main{
+    line-height: 1.4;
+    font-size: 16px;
+}
+
+h1{
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 2;
+}
+h2{
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 2;
+}
+h3{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 2;
+}
+h4{
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 2;
+}
+h5{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 2;
+}
+h6{
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 2;
+}
+.main_section_image{
+    display: block;
+    width: 500px ;
+    padding: 20px;
+    margin: 0 auto;
+}
+.main_section_small_image{
+    display: block;
+    width: 400px;
+    padding: 20px;
+    margin: 0 auto;
+}
+.main_section_image-left_float{
+    float: left;
+    width: 300px;
+
+}
+
+p{
+    text-indent: 5px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.no_indent{
+    text-indent: 0px;
+}
+
+strong{
+    font-weight: bold;
+}
+
+.nav-up {
+    top: -40px;
+}
+
+
+
+a:link {
+    color: #2d2d2d;
+    text-decoration: none;
+}
+a:visited {
+    color: #2d2d2d;
+    text-decoration: none;
+}
+a:hover {
+    color: #8D8D8D;
+    text-decoration: none;
+}
+
+::selection {
+    background: #2d2d2d;
+    color: #fdfdfd;
+}
+
+
+/* HEADER */
+/* MAIN-MENU */
+header {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    transition: top 0.2s ease-in-out;
+}
+
+
+/* FIRST ROW */
+.gnb-inner-first {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin: 0 auto;
+    background-color: #fdfdfd;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+button {
+    border: none;
+    outline: none;
+    background-color: #fdfdfd;
+    padding: 0;
+
+}
+.sample-area{
+    display: none;
+}
+
+
+.hamburger{
+    margin: 0 0 0 10px;
+    width: 28px; 
+    /* 이미지가 svg파일이야 이래야 높이가 20px로 맞춰짐. */
+}
+.logo{
+     width: 90px;
+}
+
+.graph {
+    width: 20px;
+    margin: 0 10px 0 0;
+}
+
+
+/* SECOND ROW */
+.gnb-inner-second {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    height: 40px;
+    background-color: #fdfdfd;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#topic_button {
+    margin: 0 0 0 15px;
+    width: 17px;
+}
+
+/* NAVIGATION - Topic Button */
+/* SIDE_MENU - WHOLE DESIGN */
+.topic-class .side-menu {
+    position: absolute;
+    top: 0px;
+    width: 320px;
+    left: -320px;
+    height: 700px;
+
+    background: transparent;
+
+    transform: translate(0, 0);
+    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.topic-class.menu_on .side-menu {
+    transform: translate(320px, 0);
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.03);
+}
+
+/* SIDE_MENU - TOPIC DESIGN */
+#opic {
+    margin: 0 0 0 10px;
+    padding: 7px 10px 4px 24px;
+    /* 1=T와 opic간의 높이 조절, 2=밑줄 가로 길이 조절 3=밑줄 높이 조절 4=T와 opic 사이 간격 조절 */
+    border-bottom: 1px solid #242628;
+    width: 100px;
+}
+#opic_image{
+    width: 60px;
+    height: 30px;
+    margin: 0;
+}
+
+/* SIDE_MENU - CONTENT DESIGN */
+.menu-body{
+    padding:10px 20px;
+    background-color: #fdfdfd;
+    height: inherit;
+    overflow: auto;
+}
+.second--title{
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+.third--title-height{
+    margin: 15px 0 20px 0;
+}
+
+.third--title > .third--title-height > li{
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.fourth--title > li{
+    display: block;
+    font-size: 12px;
+    margin: 10px 0 10px 5px;
+}
+
+.fifth--title > li{
+    display: block;
+    font-size: 10px;
+    margin: 10px 0 10px 10px;
+}
+
+
+/* 
+SUB-MENU 
+구조 : sub-menu(div) > inner(div) > group(ul) > part-1,2,3(li) > title
+*/
+.sub-menu {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    margin-top: 40px;
+    text-align: left;
+    background-color: #fefefe;
+}
+
+.hide {
+    display: none;
+}
+
+.sub-menu .inner {
+    /* sub-menu 품에서 inner가 춤추고 있음 */
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.sub-menu .inner .group {
+    /* inner 품에서 group이 춤추고 있음 */
+    display: flex;
+    justify-content: space-between;
+    background-color: #fefefe;
+}
+
+/* PART-0,1,2 COMMON PROPERTY */
+.sub-menu .inner .group > li {
+    padding: 40px 30px;
+    height: 350px;
+}
+
+.sub-menu .inner .group .title {
+    position: relative;
+    font-size: 18px;
+    letter-spacing: -0.05em;
+    padding-bottom: 19px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* PART-1,2 COMMON PROPERTY */
+.mass{
+    display: flex;
+}
+
+.sub-mass {
+    padding: 10px;
+    padding-right: 30px;
+}
+
+.sub-mass ul {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 200%;
+}
+
+.underline {
+    border-bottom: 1px solid black;
+}
+
+.title-second {
+    font-size: 15px;
+    line-height: 200%;
+}
+
+.title-third {
+    padding-top: 10px;
+}
+
+.title-fourth {
+    text-indent: 5px;
+}
+
+.title-fourth ul {
+    font-size: 10px;
+    line-height: 300%;
+    font-weight: normal;
+}
+
+/* .fifth {
+    text-indent: 10px;
+}
+
+.fifth ul {
+    font-size: 8px;
+} */
+
+
+/* PART0 */
+.mass-introduction {
+    padding: 10px;
+}
+.mass-introduction ul {
+    font-size: 15px;
+    line-height: 200%;
+}
+
+/* PART1 */
+
+/* PART2 */
+#for_padding_top {
+    padding-top: 10px;
+}
+
+
+/* SUB-MENU - COLUMN LINE DESIGN */
+.gnb .sub-menu .inner .part-1::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    top: 40px;
+    bottom: 40px;
+    background-color: rgba(26, 26, 26, 0.1);
+    margin-left: -30px;
+}
+.gnb .sub-menu .inner .part-2::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    top: 40px;
+    bottom: 40px;
+    background-color: rgba(26, 26, 26, 0.1);
+    margin-left: -30px;
+}
+
+/* MAIN */
+/* SECTION */
+.title-background {
+    position: fixed;
+    width: 100%;
+    background-color: #fdfdfd;
+    height: 500px;
+    z-index: -1;
+}
+
+.section {
+    /* 버티기 위해 필요한 div */
+    background-color: transparent;
+    height: 500px;
+    border-bottom:1px solid #c0c0c0 ;
+
+}
+
+.title-door {
+    position: relative;
+    display: block;
+    width: 600px;;
+    margin: 0 auto;
+    background-color:transparent;
+    top: 300px;
+    right: 100px;
+    font-size: 50px;
+    color: #242628;
+    padding-bottom: 20px;
+    /* border-bottom:1px solid #242628 ; */
+    font-weight: 200;
+}
+
+.section-two {
+    background-color: #fdfdfd;
+}
+
+.context-two {
+    max-width: 768px;
+    margin: 0 auto;
+    height:100%;
+    padding-top: 80px;
+}
+
+.section_image{
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+/* FOOTER */
+
+.footer {
+    position: fixed;
+    bottom: 0;
+
+    width: 100%;
+    margin: 0 auto;
+    height: 40px;
+    background-color: #fdfdfd;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+
+.footer img {
+    height: 20px;
+    margin: 0 20px 0 0;
+}
+
+.heart_button {
+    margin-left: 20px;
+}
+

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>나와 컴퓨터</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="../../../../design-control/css/tamplet.css">
+
+    <style>
+        .first_title>li {
+            font-size: 14px;
+        }
+
+        .second_title>li {
+            font-size: 12px;
+            text-indent: 5px;
+            font-weight: bold;
+        }
+
+        .third_title>li {
+            font-size: 10px;
+            text-indent: 10px;
+        }
+
+        .fourth_title>li {
+            font-size: 8px;
+            text-indent: 15px;
+        }
+
+        .fifth {
+            font-size: 8px;
+            margin-left: 20px;
+        }
+
+        .small{
+            margin: 0;
+            width: 200px;
+        }
+
+        .medium{
+            margin: 0;
+            width: 400px;
+        }
+
+        .large{
+            margin: 0;
+            width: 600px;
+        }
+        .huge{
+            margin:0;
+            width: 800px;
+        }
+        .extra_huge{
+            margin: 0;
+            width: 1000px;
+        }
+    </style>
+</head>
+
+<body>
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Octave/Matlab</h1>
+        </header>
+        <section class="content">
+            <nav>
+                <ul class="first_title">
+                    <li>0. INTRO</li><br>
+                    <li>1. 재료 구하기</li>
+                    <ul class="second_title">
+                        <li>1. 데이터 표현방식(데이터 타입)</li>
+                        <ul class="third_title">
+                            <li>1. 숫자</li>
+                            <ul class="fourth_title">
+                                <li>1. 정수</li>
+                                <li>2. 실수</li>
+                            </ul>
+                            <li>2. 문자(string)</li>
+                            <li>3. 불리언(T/F)</li>
+                            <li>4. 배열</li>
+                            <div class="fifth">
+                                <p>key, value</p>
+                            </div>
+                        </ul>
+                        <li>2. 변수, 연산자</li>
+                        <li>3. 함수</li>
+                        <ul class="third_title">
+                            <li>1. 내장함수</li>
+                            <li>2. 내가 만드는 함수</li>
+                            <div class="fifth">
+                                <p>형태</p>
+                                <p>
+                                    function 함수이름(매개변수1, parameter2)<br>
+                                    {<br>
+                                    &nbsp&nbsp&nbsp함수 내용;<br>
+                                    &nbsp&nbsp&nbspreturn 출력값;<br>
+                                    }
+                                    <br><br>
+                                    function(입력값1, argument2)
+                                </p>
+                            </div>
+                        </ul>
+                    </ul>
+
+                    <br>
+
+                    <li>2. 요리하기</li>
+                    <ul class="second_title">
+                        <li>프로그램 실행법 step1 : 순서에 따라 살행하기</li>
+                        <li>프로그램 실행법 step2 : 제어문</li>
+                        <ul class="third_title">
+                            <li>1. 조건문 #if문</li>
+                            <div class="fifth">
+                                <p>형태</p>
+                                <p>
+                                    if(조건1 #결과값은 불리언){ <br>
+                                    &nbsp&nbsp&nbsp실행할 명령1; <br>
+                                    } <br>
+                                    elseif(조건2 #결과값은 불리언){ <br>
+                                    &nbsp&nbsp&nbsp실행할 명령2; <br>
+                                    } <br>
+                                    else{ <br>
+                                    &nbsp&nbsp&nbsp실행할 명령3; <br>
+                                    } <br>
+                                </p>
+                            </div>
+
+                            <li>2. 반복문 #while문</li>
+                            <div class="fifth">
+                                <p>형태</p>
+                                <p>
+                                    while(조건)<br>
+                                    {<br>
+                                    &nbsp&nbsp&nbsp실행할 명령;<br>
+                                    }<br>
+                                </p>
+                            </div>
+
+                        </ul>
+                    </ul>
+                </ul>
+
+            </nav>
+            <main>
+                <h2>2. 연산자</h2>
+                <h3>비교연산자</h3>
+                <p
+                    >~= : 부정<br>
+                </p>
+
+
+                인덱싱을 하려면<br>
+                a(1)라고 하면 1번째 값 나옴<br>
+                a(2)라고 하면 2번째 값 나온다. 참고로 세로로 읽은 후 가로로 읽는다.<br>
+                a(3,2)라고 하면 됨. a행렬의 3행 2열의 값이 나옴.<br>
+                a(2, :)하면 a행렬의 2행만 전부 뽑아냄<br>
+                a(:, 4)하면 a행렬의 4열만 전부 뽑아냄<br>
+                <img class="small" src="../../../../design-control/img/octave-function-indexing.png" alt="">
+
+                <p>
+                    ' : 전치행렬 만들기 : transpose
+                    <img class="small" src="../../../../design-control/img/octave-claculate-transpose.png" alt="">
+                    .* = elementwise multiply = 아다마르 곱<br>
+                </p>
+
+                <h2>3. 함수</h2>
+                <h3>1. 내장함수</h3>
+                <p>
+                    reshape() : 참고로 세로로 읽는다
+                    <img class="medium" src="../../../../design-control/img/octave-function-reshape.png" alt="">
+                
+                    flipud(), fliplr()
+                    <img class="medium" src="../../../../design-control/img/octave-function-flip.png" alt="">
+                
+                    size()
+                    <img class="medium" src="../../../../design-control/img/octave-function-size.png" alt="">
+                    size(X,2) : X라는 행렬의 열의 수를 반환한다. 2가 axis2를 의미하는 건가?
+                
+                    length()
+                    <img class="medium" src="../../../../design-control/img/octave-function-length.png" alt="">
+
+                    mean() : 열 방향으로 평균을 구한다.
+                    <img class="medium" src="../../../../design-control/img/octave-mean.png" alt="">
+
+                    std() : 표본 표준편차 구하는 것
+
+                    help 명령어 : 명령어에 대한 설명을 알려줌(matlab해당)
+                </p>
+
+
+                <h3>2. 내가 만드는 함수</h3>
+                <p>
+                    기본형태<br>
+                    <div style="width: 200px; border: 1px solid black; padding: 10px;">
+                        function output인자 = 함수이름(input인자)<br>
+                        함수 수식;<br>
+                        end
+                    </div>
+                    ;을 붙여주면 명령 창에 값이 출려되지 않음.
+                    주의 : 명령 창에는 함수명을 쓰는게 아니라 파일명을 쓰는 것이다.
+                    <img class="medium" src="../../../../design-control/img/octave-function-basic.png" alt="">
+
+                    
+                </p>
+
+                <h2>주석</h2>
+                <p>
+                    %
+                </p>
+
+                <p>
+                    e^x = exmp(x) : 행렬지수를 계산한데. 복잡한 건가봐.
+                    e.^x = exp(x) : 행렬의 각각의 요소에 e승하기
+                </p>
+
+
+                <h3>at 명령 창</h3>
+                <p>
+                    clc : 창 다 지우기<br>
+                    clear : 작업공간 지우기
+                </p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente veniam nostrum debitis! Molestias, adipisci. Officia adipisci reiciendis voluptate fugit, ipsa laborum, totam delectus, quae exercitationem molestiae corporis id tempora quam temporibus soluta magnam aliquam? Placeat iste id molestiae provident, dignissimos, molestias dicta ex rerum nihil, dolorem ad assumenda dolor eum?
+            </main>
+            <aside>
+
+            </aside>
+        </section>
+        <footer>
+            출처 : 인프런 - MATLAB으로 시작하는 프로그래밍, 
+        </footer>
+    </div>
+</body>
+
+</html>

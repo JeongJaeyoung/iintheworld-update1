@@ -1,0 +1,62 @@
+/* HEADER */
+/* MAIN-MENU */
+ul{
+    background-color: #fff;
+}
+.main-menu-inner{
+    height: 150px;
+}
+
+
+/* NAVIGATION */
+.sample-area{
+    display: block;
+}
+.sample-class .side-menu {
+    position: fixed;
+    top: 150px;
+    width: 550px;
+    left: -550px;
+    height: 95%;
+
+    background:#fff;
+
+    transform: translate(0, 0);
+    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sample-class.menuon .side-menu {
+    transform: translate(550px, 0);
+    /* box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.03); */
+}
+
+
+
+.menu-body{
+    padding:30px;
+}
+.hamburger_topic{
+    padding: 40px;
+}
+.hamburger_topic-first{
+    font-weight: bold;
+    font-size: 45px;
+    padding: 30px 0;
+}
+.hamburger_topic-second{
+    text-indent: 10px;
+    font-size: 40px;
+    line-height: 1.4;
+}
+
+#hamburger_button{
+    width: 100px;
+}
+
+#logo_button{
+    width: 200px;
+}
+
+.group{
+    display: none;
+}

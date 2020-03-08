@@ -1,0 +1,154 @@
+/* TAG 관련 기본 설정 (a, body, h, p) */
+/* CLASS 관련 기본 설정(button, display, location, size, title) */
+/* ID 관련 기본 설정 */
+
+/* TAG 관련 기본 설정 */
+/* a 태그 */
+a:link {
+    color: #2d2d2d;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #2d2d2d;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #8D8D8D;
+    text-decoration: none;
+}
+
+/* body 태그 */
+body{
+    font-size: 8px; /* 기본 글자 크기 */
+    line-height: 1.4;  /* 기본 줄 높이  */
+    color: #2d2d2d;
+}
+
+/* h 태그 */
+h1{
+    font-size: 20px;
+}
+h2{
+    font-size: 18px;
+}
+h3{
+    font-size: 16px;
+}
+h4{
+    font-size: 14px;
+}
+h5{
+    font-size: 12px;
+}
+h6{
+    font-size: 10px;
+}
+
+/* p 태그 */
+p{
+    text-indent: 5px; /*들여쓰기 기본 설정 */
+}
+
+/* CLASS 관련 기본 설정 */
+/* button 관련 */
+.btn{
+
+}
+
+/* size 관련 */
+.size-w1{
+    width: 100px;
+}
+.size-w2{
+    width: 200px;
+}
+.size-w3{
+    width: 300px;
+}
+.size-w4{
+    width: 400px;
+}
+.size-w5{
+    width: 500px;
+}
+.size-w6{
+    width: 600px;
+}
+.size-w7{
+    width: 700px;
+}
+.size-w8{
+    width: 800px;
+}
+.size-w9{
+    width: 900px;
+}
+.size-w10{
+    width: 1000px;
+}
+
+.size-h1{
+    height: 100px;
+}
+.size-h2{
+    height: 200px;
+}
+.size-h3{
+    height: 300px;
+}
+.size-h4{
+    height: 400px;
+}
+.size-h5{
+    height: 500px;
+}
+.size-h6{
+    height: 600px;
+}
+.size-h7{
+    height: 700px;
+}
+.size-h8{
+    height: 800px;
+}
+.size-h9{
+    height: 900px;
+}
+.size-h10{
+    height: 1000px;
+}
+
+/* display 관련 */
+.disp-block{
+    display: block;
+}
+.disp-flex{
+    display: flex;
+}
+
+/* title 관련 */
+.first_title>li {
+    font-size: 14px;
+}
+
+.second_title>li {
+    font-size: 12px;
+    text-indent: 5px;
+}
+
+.third_title>li {
+    font-size: 10px;
+    text-indent: 10px;
+}
+
+.fourth_title>li {
+    font-size: 8px;
+    text-indent: 15px;
+}
+
+.fifth>li {
+    font-size: 8px;
+    text-indent: 20px;
+}

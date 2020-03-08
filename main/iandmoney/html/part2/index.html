@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>아기로 태어난 돈</title>
+
+  <meta name="author" content="JeongJaeYoung">
+  <meta name="title" content="돈과 나">
+  <meta name="description" content="Money and I"">
+    <meta name=" viewport"
+    content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- open graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="돈과 나">
+  <meta property="og:title" content="돈과 나">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="../../../img/money_i.svg">
+  <meta property="og:url" content="https://jeongjaeyoung.github.io/iintheworld">
+
+  <!-- twitter -->
+  <meta property="twitter:card" content="summary">
+  <meta property="twitter:site" content="돈과 나">
+  <meta property="twitter:title" content="돈과 나">
+  <meta property="twitter:description" content="">
+  <meta property="twitter:image" content="../../../img/money_i.svg">
+  <meta property="twitter:url" content="https://jeongjaeyoung.github.io/iintheworld">
+
+  <link rel="shortcut icon" type="image/x-icon" href="../../../img/money_i.svg">
+  <link rel="icon" href="../../../img/logo--imoney.ico">
+  <link rel="apple-touch-icon" href="../../../img/money_i.svg">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+  <link rel="stylesheet" href="../../css/tamplet2.css">
+  <link rel="stylesheet" media="(max-width: 980px)" href="../../css/tamplet2_small.css">
+  <link rel="stylesheet" href="../../../css/step1-baby.css">
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+  <script type="text/javascript" defer src="../../../js/tamplet2.js"></script>
+</head>
+
+<body>
+  <div class="body__container">
+    <!-- HEADER -->
+    <!-- MAIN-MENU -->
+    <header class="gnb nav-down">
+      <!-- FIRST ROW -->
+      <div class="gnb-inner-first">
+        <button type="button" class="hamburger" onclick="$('.hide').toggle()">
+          <img  src="../../../img/hamburger-button.svg" alt="햄버거 버튼">
+        </button>
+        <!-- for 반응형 웹 -햄버거 버튼 -->
+        <div class="sample-area sample-class">
+          <div class="head">
+            <div class="btn-menu">
+              <img class="fas fa-bars" id="hamburger_button" src="../../../img/hamburger-button.svg" alt="t버튼">
+            </div>
+          </div>
+          <div class="side-menu">
+            <div class="menu-body">
+              <div>
+                <ul class="hamburger_topic">
+                  <li class="hamburger_topic-first">INTRO</li>
+                  <ul class="hamburger_topic-second">
+                    <li>Vision</li>
+                    <li>Curriculum</li>
+                  </ul>
+                </ul>
+                <ul class="hamburger_topic">
+                  <li class="hamburger_topic-first">돈에 영향받는 나</li>
+                  <ul class="hamburger_topic-second">
+                    <li><a href="../step1-baby/step1-baby.html">아기로 태어난 돈</a></li>
+                    <li><a href="../step2-child/step2-child.html">어린이가 된 돈</a></li>
+                    <li><a href="../step3-student/step3-student.html">학생이 된 돈</a></li>
+                    <li><a href="../step4-adult/step4-adult.html">어른이 된 돈</a></li>
+                  </ul>
+                </ul>
+                <ul class="hamburger_topic">
+                  <li class="hamburger_topic-first">내가 관리하는 돈</li>
+                  <ul class="hamburger_topic-second">
+                    <li>원리</li>
+                    <li>지갑</li>
+                  </ul>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  /for 반응형 웹- 햄버거 버튼 -->
+        <div class="logo_button">
+          <a href="tamplet2.html">
+            <img class="logo" src="../../../img/logo-text.svg" alt="로고 버튼">
+          </a>
+        </div>
+        <div class="graph">
+          <!-- <a href="#"> -->
+          <img src="../../../img/background.svg" alt="그래프 버튼, 지금은 투명버튼">
+          <!-- </a> -->
+        </div>
+      </div>
+
+
+
+
+
+
+      <!-- SECOND ROW -->
+      <div class="gnb-inner-second">
+        <div class="topic_button">
+          <!-- NAVIGATION -->
+          <div class="topic-class">
+            <div class="head">
+              <div class="topic-menu">
+                <img class="fas fa-bars" id="topic_button" src="../../../img/t-button.svg" alt="topic 버튼">
+              </div>
+            </div>
+            <div class="side-menu">
+              <div class="topic-menu" id="opic">
+                <img id="opic_image" src="../../../img/opic-button.svg" alt="opic">
+              </div>
+              <div class="menu-body">
+                <ul>
+                  <div class="second--title">
+                    <li>아기로 태어난 돈</li>
+                  </div>
+                  <ul class="third--title">
+                    <div class="third--title-height">
+                      <li>0. 돈의 탄생</li>
+
+                    </div>
+
+
+                    <div class="third--title-height">
+                      <li>1. 돈의 비주얼</li>
+                      <!-- <ul class="fourth--title">
+                        <li>Ⓞ 돈(금, 은) 그 자체가 부이다.</li>
+                        <li>➀ 돈(금, 은) 그 자체는 부가 아니다.</li>
+                        <li>➁ 옛날 사람들의 생활방식</li>
+
+                      </ul> -->
+                    </div>
+
+                    <div class="third--title-height">
+                      <li>2. 돈의 패션감각</li>
+  
+                          <ul class="fourth--title">
+                              <li>➀ 이동성</li>
+                              <!-- <ul class="fifth--title">
+                                <li>(1) 자본주의의 핵심엔진 #신용창출</li>
+                                <li>(2) 신용창출의 효과 #파이 키우기</li>
+                                <li>(3) 신용창출이 바꾼 생활방식</li>
+                              </ul> -->
+                              <li>➁ 저장성</li>
+                              <!-- <ul class="fifth--title">
+                                <li>(1) 공급과잉</li>
+                                <li>(2) 공급과잉 해결책 #수요 땅따먹기</li>
+                             
+                              </ul> -->
+                              <li>➂ 희소성</li>
+                            </ul>
+                    </div>
+                  </ul>
+                </ul>
+              </div>
+
+        <!--
+                EVENT BUTTON
+                <div class="graph_button">
+                   <a href="#">
+                        <img src="./korea.png" alt="EVENT 버튼" style="filter:grayscale(100%);">
+                    </a>
+                </div>
+                 -->
+      </div>
+
+      <!-- SUB-MENU -->
+      <div class="sub-menu hide">
+        <div class="inner">
+          <ul class="group">
+            <li class="part-0">
+
+              <p class="title">INTRO</p>
+
+              <ul>
+                <div class="mass-introduction">
+                  <li><a href="#" class="title-second" onclick="">Vision</a></li>
+                  <li><a href="#" class="title-second" onclick="">Curriculum</a></li>
+                </div>
+              </ul>
+
+            </li>
+            <li class="part-1">
+
+              <p class="title" style="text-align: center;">돈에 영향받는 나</p>
+              <ul>
+                <div class="mass">
+                  <div class="sub-mass">
+                    <li class="underline"><a class="title-second" href="#" onclick="">아기로 태어난 돈</a></li>
+                    <div class="title-third">
+                      <ul>
+                        <li><a href="#">비주얼</a></li>
+                        <li><a href="#">패션 감각</a></li>
+
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="sub-mass">
+
+                    <li class="underline"><a class="title-second" href="../step2-child/step2-child.html" onclick="">어린이가 된 돈</a></li>
+
+                    <div class="title-third">
+                      <ul>
+                        <li><a href="#">자본주의 이전의 시대</a></li>
+                        <div class="title-fourth">
+                          <ul>
+                            <li><a href="#">돈 그 자체가 부이다</a></li>
+                            <li><a href="#">돈 그 자체는 부가 이니다</a></li>
+                            <li><a href="#">옛날 사람들의 생활방식</a></li>
+                          </ul>
+                        </div>
+                        <div id="for_padding_top">
+                          <li><a href="#">자본주의 시대</a></li>
+                        </div>
+                        <div class="title-fourth">
+                          <ul>
+                            <li><a href="#">자본주의의 등장</a></li>
+                            <li><a href="#">자본주의의 본질</a></li>
+                            <!-- <div class="fifth">
+                                                                <ul>
+                                                                    <li><a href="#">자본주의의 핵심엔진</a></li>
+                                                                    <li><a href="#">신용창출의 효과</a href="#"></li>
+                                                                    <li><a href="#">신용창출이 바꾼 생활방식</a></li>
+                                                                </ul>
+                                                            </div> -->
+                            <li><a href="#">자본주의의 특징</a></li>
+                          </ul>
+                        </div>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="sub-mass">
+                    <li class="underline"><a class="title-second" href="../step3-student/step3-student.html" onclick="">학생이 된 돈</a></li>
+                    <div class="title-third">
+                      <ul>
+                        <li><a href="#">1교시</a></li>
+                        <li><a href="#">2교시</a></li>
+                        <li><a href="#">3교시</a></li>
+                        <li><a href="#">4교시 금본위제OXOX</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="sub-mass">
+
+                    <li class="underline"><a class="title-second" href="../step4-adult/step4-adult.html" onclick="">어른이 된 돈</a></li>
+
+                    <div class="title-third">
+                      <ul>
+                        <li><a href="#">미국</a></li>
+                        <li><a href="#">아랍</a></li>
+                        <li><a href="#">유럽</a></li>
+                        <li><a href="#">아시아</a></li>
+                        <div class="title-fourth">
+                          <ul>
+                            <li><a href="#">일본</a></li>
+                            <li><a href="#">한국</a></li>
+                            <li><a href="#">중국</a></li>
+                          </ul>
+                        </div>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+
+            </li>
+            <li class="part-2">
+
+              <p class="title">내가 관리하는 돈</p>
+              <ul>
+                <div class="mass">
+                  <div class="sub-mass">
+
+                    <li class="underline"><a class="title-second" href="#" onclick="">원리</a></li>
+
+                    <div class="title-third">
+                      <ul>
+                        <li><a href="#">수익률, 위험률</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="sub-mass">
+
+                    <li class="underline"><a class="title-second" href="#" onclick="">돈 넣어둘 장소</a></li>
+
+                    <div class="title-third">
+                      <ul>
+                        <li><a href="#">예금</a></li>
+                        <li><a href="#">주식</a></li>
+                        <li><a href="#">채권</a></li>
+                        <li><a href="#">펀드</a></li>
+                        <li><a href="#">보험</a></li>
+                        <li><a href="#">부동산</a></li>
+                        <li><a href="#">파생상품</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </header>
+
+    <!-- MAIN -->
+    <!-- SECTION -->
+    <main>
+      <!-- SECTION1 -->
+      <div class="title-background">
+        <div class="title-door">아기로 태어난 돈</div>
+      </div>
+      <div class="section">
+      </div>
+
+      <!-- SECTION2 -->
+      <div class="section-two">
+        <div class="context-two">
+
+          <h2>그래서 우리 사회는 어떻게 생겼는데?</h2>
+          자본주의 사회의 개인과 기업이 주인공이다.<br>
+          개인이 돈을 기업에 넣는 방법은 돈을 투자하거나 빌려주는 2가지 방법뿐이다.<br>
+          전자는 주식이라고 부르고 후자는 채권이라고 부른다.<br>
+          <br>
+          부동산 시장은 기업들이 이끌어가는 시장과는 본질적으로 다르다.<br>
+          부동산은 죽어있는 기업이다. 얘는 공장이 있어서 굴러가지 않는다. 얘의 가격 상승 동력은 심리적 요인이 대부분이다.<br>
+          <br>
+          기업은 다르다. 내가 투자한 돈으로 기업의 직원들은 젊음과 실력을 갈아넣어서 기업을 성장시킨다.<br>
+          20~50대가 기업을 미친듯이 성장시키고 60~80대가 그 기업을 도와주면서 노후를 준비하는 상황이 바람직하다.<br>
+          <br>
+          돈이 부동산 시장이 아닌 기업 시장으로 들어가야 자본주의에 대한 정확한 이해를 한 것이고, 선순환이 돌아간다.<br>
+          기업이 성장하고 배당금 또는 이자를 꼬박꼬박 꽂아주고, 나는 돈이 돈을 만들어주고.<br>
+          <br>
+          은행도 돈을 가지고 있어야 할 곳이 아니다. 은행의 본질적 역할은 돈이 필요한 기업에게 돈을 뿌려주는 것이다.<br>
+          <br>
+          일본이 그렇게 은행과 부동산 시장에 돈이 흘러가서 망했다.<br>
+          <br>
+          내가 주식을 삼으로서 기업의 주인이 되는 것이다. 내가 돈을 불릴 자격을 가지는 것이다.<br>
+        
+          <h2>내 돈을 어떻게 지켜야 할까?</h2>
+          <p>
+            기업을 들여다 보고 성장할 가능성이 있는 기업에 돈을 넣어서<br>
+            돈이 돈을 벌게 해야한다.<br>
+            주식을 넣고 긴 안목으로 보면 일반적인 기업은 성장하게 되어있다.<br>
+            그럼 내 돈은 불어나는 것이다.<br>
+            단기간의 등락에 일희일비하지 말자.<br>
+            부자는 천천히 되는 것이다.<br>
+            중요한 건 안정성과 지속가능성이다.<br>  
+            <br>
+            그래서 우리는 기업을 평가할 수 있는 능력을 키워야 한다.<br>
+            기업의 가계부인 재무제표를 읽어서 이게 성장가능성이 있는 기업인지, 없는 기업인지 판단할 수 있어야 한다.<br>
+            운전을 잘하는 것과 자동차를 잘 만드는 것은 다르다.<br>
+            재무제표는 회계사만 읽는 문서가 아니다. 회계사는 재무제표를 더 정확하게 만드는 사람이다.<br>
+            읽는 사람은 우리여야한다.<br>
+          </p>
+
+          <h2>돈이 돈을 굴려줘서 부자가 되면 행복할까?</h2>
+          <p>
+            돈을 많이 버는 것과 가치있는 일을 하는 것은 별개의 문제이다.<br>
+            가치있는 일을 하기 위해선 공부해야한다. 사회의 내부 알고리즘을 이해해야 내가 직접 고칠 수 있기 때문이다.<br>
+            그게 기술이 될 수도, 교육이 될 수도 제조업이 될 수도 있다. 전문분야를 가지고 가치있는 일을 해야한다.<br>
+          </p>
+          <p>
+            기본적인 수준까지는 행복은 돈과 비례하고, 일정수준을 넘어가면 그 이상부터는 가치있는 일을 할 수 있는 실력과 능력이 나의 행복과 비례한다. 
+            가치있는 일은 공부를 해야 알 수 있다.
+            공부는 시스템을 굴리는 구체적인 방법을 알려준다. 관세사 자격증을 공부하면 실제 물건을 수입할 때 일어나는 구체적인 절차를 이해하고 내가 
+            그 구체적인 행동을 할 수 있게 된다. 가치있는 일을 하는 것이다. 공부의 깊이가 깊어질 수록 행동의 가치는 커진다.
+            의사와 변호사가 돈이 많이 벌어서 드라마에 많이 나오는 것이 아니다.
+            의사와 변호사가 하는 행동에 높은 가치가 있기 때문이다. 의사는 사람을 살리고, 변호사는 인생의 중요한 판단 순간을 도와준다.
+            그래서 공부를 많이 하는 것이다.
+            욜로족과 워라밸을 좋아하지 않는다. 많은 공부를 해서 더 큰 가치를 만들어내는 일을 할 수 있는 것이 중요하다.
+          </p>
+            
+
+    </main>
+
+
+    <footer>
+      <div class="footer">
+        <div class="heart_button">
+          <a href="#">
+            <img src="../../../img/heart.svg" alt="하트 버튼">
+          </a>
+        </div>
+        <div class="comment_button">
+          <a href="#">
+            <img src="../../../img/comment.svg" alt="댓글 버튼">
+          </a>
+        </div>
+        <div class="share_button">
+          <a href="#">
+            <img src="../../../img/share.svg" alt="공유 버튼">
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+</body>
+
+</html>
