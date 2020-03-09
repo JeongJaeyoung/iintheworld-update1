@@ -21,29 +21,29 @@ a:hover {
 
 /* body 태그 */
 body{
-    font-size: 8px; /* 기본 글자 크기 */
-    line-height: 1.4;  /* 기본 줄 높이  */
+    font-size: 14px; /* 기본 글자 크기 */
+    line-height: 2;  /* 기본 줄 높이  */
     color: #2d2d2d;
 }
 
 /* h 태그 */
 h1{
-    font-size: 20px;
+    font-size: 25px;
 }
 h2{
-    font-size: 18px;
+    font-size: 24px;
 }
 h3{
-    font-size: 16px;
+    font-size: 23px;
 }
 h4{
-    font-size: 14px;
+    font-size: 22px;
 }
 h5{
-    font-size: 12px;
+    font-size: 21px;
 }
 h6{
-    font-size: 10px;
+    font-size: 20px;
 }
 
 /* p 태그 */
@@ -53,8 +53,19 @@ p{
 
 /* CLASS 관련 기본 설정 */
 /* button 관련 */
-.btn{
+.btn-border{
+    border: 1px solid black;
+}
 
+/* display 관련 */
+.disp-block{
+    display: block;
+}
+.disp-flex{
+    display: flex;
+}
+.disp-none{
+    display: none;
 }
 
 /* size 관련 */
