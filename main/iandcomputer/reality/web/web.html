@@ -159,8 +159,65 @@
 
                 <h3>javascript</h3>
                 <p>
-
+                    브라우저에서 문서를 제어하는 것을 DOM이라고 한다.<br>
+                    object화 되어야 javascript로 그 객체들을 제어가 가능하다.<br>
+                    document라는 객체는 .getelementID 같은 메서드를 가지고 있는 것이다.<br>
+                    var x = document.getelementID 라고 하면<br>
+                    x에는 배열이 담긴다.<br>
                 </p>
+                <img src="../../../iandcomputer/design-control/img/window.png" alt="">
+                <h4>window라는 객체</h4>
+                <p>
+                    window라는 객체는 전역객체이고, window가 가지고 있는 중요한 property 중 하나가 documnent라는 것이다.
+                    그 document라는 객체는 웹페이지의 문서를 제어한다.
+                    document라는 객체는 DOM(Document Object Model)이라는 기능을 한다.
+                </p>
+                <div style="display: flex;">
+                    <div>
+                        <h4>1. DOM</h4>
+                        <p>
+                            웹브라우저의 문서와 관련된 것
+                        </p>
+                    </div>
+                    <div>
+                        <h4>2. BOM(Browser Object Model)</h4>
+                        <p>
+                            브라우저와 관련된 것을 제어한다. 예를 들어 URl같은 것들을 제어거나 경고창을 띄우거나.
+                        </p>
+                        <h5>alert</h5>
+                        <h5>confirm</h5>
+                        <p>
+                            사용자의 선택에 따라 true 또는 false를 반환한다.
+                        </p>
+                        <h5>prompt</h5>
+                        <p>
+                            창이 뜨면서 사용자가 주관식으로 답변을 하도록 한다.
+                        </p>
+                        <h5>location 객체</h5>
+                        <p>
+                            현재의 URL을 알 수 있나봐<br>
+                            console.log(location.xxx)를 치면 된다.
+                            <img style="width: 200px;" src="../../../iandcomputer/design-control/img/location.png" alt="">
+                            
+                        </p>
+                        <h5>navigator 객체</h5>
+                        <p>
+                            브라우저의 정보(제품명, 버전 등)를 알려준다.<br>
+                            crossbrowsing 이슈랑 관련있음. 요즘은 별로 문제 안됨.
+                        </p>
+                    </div>
+                    <div>
+                        <h4>3. Javascript Core</h4>
+                        <p>
+
+                        </p>
+                    </div>
+                </div>
+                <h4>기타</h4>
+                <p>
+                    명령창(콘솔창)에서 실행하는 것과 에디터에서 script태그 안의 코드를 실행하는 것이 같은 것인가봐.
+                </p>
+
 
                 <h2>백엔드</h2>
                 <h3>PHP</h3>
@@ -231,7 +288,7 @@
             </aside>
         </section>
         <footer>
-            참고자료 : 인프런-남박사의 파이썬으로 실전 웹사이트 만들기
+            참고자료 : 생활코딩-웹브라우저 자바스크립트
         </footer>
     </div>
 </body>
