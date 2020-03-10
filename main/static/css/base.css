@@ -1,5 +1,5 @@
 /* TAG 관련 기본 설정 (a, body, h, p) */
-/* CLASS 관련 기본 설정(button, display, location, size, title) */
+/* CLASS 관련 기본 설정(border ,button, display, location, padding, scroll, size, title) */
 /* ID 관련 기본 설정 */
 
 /* TAG 관련 기본 설정 */
@@ -52,10 +52,12 @@ p{
 }
 
 /* CLASS 관련 기본 설정 */
-/* button 관련 */
-.btn-border{
-    border: 1px solid black;
+/* border 관련 */
+.border-basic{
+    border: 1px solid #f2f2f2;
 }
+
+/* button 관련 */
 
 /* display 관련 */
 .disp-block{
@@ -66,6 +68,26 @@ p{
 }
 .disp-none{
     display: none;
+}
+/* display 관련 */
+.disp-block{
+    display: block;
+}
+.disp-flex{
+    display: flex;
+}
+/* */
+.pad-5{
+    padding: 5px;
+}
+.pad-10{
+    padding: 10px;
+}
+.pad-15{
+    padding: 15px;
+}
+.pad-20{
+    padding: 20px;
 }
 
 /* size 관련 */
@@ -131,13 +153,27 @@ p{
     height: 1000px;
 }
 
-/* display 관련 */
-.disp-block{
-    display: block;
+/* scroll 관련 */
+.scroll{
+    overflow: auto;
 }
-.disp-flex{
-    display: flex;
-}
+
+.scroll::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  
+.scroll::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+.scroll::-webkit-scrollbar-thumb {
+    background: transparent; 
+  }
+  
+.scroll::-webkit-scrollbar-thumb:hover {
+    background: transparent; 
+  }
 
 /* title 관련 */
 .first_title>li {
