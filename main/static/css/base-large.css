@@ -85,6 +85,12 @@ p{
 .disp-block{
     display: block;
 }
+.disp-inline{
+    display: inline;
+}
+.disp-inblock{
+    display: inline-block;
+}
 .disp-flex{
     display: flex;
 }
@@ -93,6 +99,10 @@ p{
 /* 우선순위 sigma > partial > frac */
 .equa_size{
     height: 20px;
+    margin: 5px;
+}
+.equa_squre{        /* 제곱 */
+    height: 30px;
     margin: 5px;
 }
 .equa_size-frac{    /* 분수 */
@@ -129,8 +139,10 @@ p{
 }
 
 /* image 관련 */
-.normal_image{
+.margin-center{
+  
     margin: 0 auto;
+
 }
 
 /* margin 관련 */
