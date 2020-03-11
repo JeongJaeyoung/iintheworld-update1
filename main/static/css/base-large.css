@@ -22,6 +22,8 @@ a:hover {
 
 /* body 태그 */
 body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 100;
     font-size: 14px; /* 기본 글자 크기 */
     line-height: 2;  /* 기본 줄 높이  */
     color: #2d2d2d;
