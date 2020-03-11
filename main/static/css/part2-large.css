@@ -113,6 +113,7 @@ button {
 .second--title{
     margin: 10px 0;
     font-size: 18px;
+    font-weight: 400;
 }
 .third--title-height{
     margin: 15px 0 20px 0;
@@ -121,6 +122,7 @@ button {
 .third--title > .third--title-height > li{
     display: block;
     font-size: 16px;
+    font-weight: 400;
     margin: 10px 0;
 }
 

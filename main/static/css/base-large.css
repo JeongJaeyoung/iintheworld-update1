@@ -85,19 +85,6 @@ p{
 .disp-flex{
     display: flex;
 }
-/* */
-.pad-5{
-    padding: 5px;
-}
-.pad-10{
-    padding: 10px;
-}
-.pad-15{
-    padding: 15px;
-}
-.pad-20{
-    padding: 20px;
-}
 
 /* equation_image_size 관련 수식이미지 사이즈 조절하기 frac은 분수 들어간 것 */
 /* 우선순위 sigma > partial > frac */
@@ -197,6 +184,40 @@ p{
 .margin-b100{
     margin-bottom: 100px;
 }
+/* padding 관련 */
+.pad-5{
+    padding: 5px;
+}
+.pad-10{
+    padding: 10px;
+}
+.pad-15{
+    padding: 15px;
+}
+.pad-20{
+    padding: 20px;
+}
+.pad-25{
+    padding: 25px;
+}
+.pad-30{
+    padding: 30px;
+}
+.pad-35{
+    padding: 35px;
+}
+.pad-40{
+    padding: 40px;
+}
+.pad-45{
+    padding: 45px;
+}
+.pad-50{
+    padding: 50px;
+}
+
+
+
 
 /* size 관련 */
 .size-w1{
