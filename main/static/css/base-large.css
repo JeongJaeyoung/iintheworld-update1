@@ -1,6 +1,6 @@
 /* CSS 기본 설정 정하기 - 데스크탑 기준 */
 /* TAG 관련 기본 설정 (a, body, h, p) */
-/* CLASS 관련 기본 설정(border ,button, display, equation_size, location, margin, padding, scroll, size, title) */
+/* CLASS 관련 기본 설정(border ,button, display, equation_size, image, location, margin, padding, scroll, size, title) */
 /* ID 관련 기본 설정 */
 
 /* TAG 관련 기본 설정 */
@@ -65,6 +65,9 @@ p{
 .border-basic{
     border: 1px solid #f2f2f2;
 }
+.border-r{
+    border-right: 1px solid #f2f2f2;
+}
 
 /* button 관련 */
 
@@ -125,7 +128,28 @@ p{
     margin: 5px;
 }
 
+/* image 관련 */
+.normal_image{
+    margin: 0 auto;
+}
+
 /* margin 관련 */
+.margin-10{
+    margin: 10px;
+}
+.margin-20{
+    margin: 20px;
+}
+.margin-30{
+    margin: 30px;
+}
+.margin-40{
+    margin: 40px;
+}
+.margin-50{
+    margin: 50px;
+}
+
 .margin-l10{
     margin-left: 10px;
 }
