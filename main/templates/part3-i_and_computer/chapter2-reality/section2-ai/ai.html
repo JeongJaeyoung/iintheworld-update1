@@ -16,24 +16,160 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script type="text/javascript" defer src="../../../../static/js/base.js"></script>
+  <script type="text/javascript" defer src="../../../../static/js/p3-ch2-s2-ai.js"></script>
 </head>
 
 <body>
   <div class="body__container">
     <!-- HEADER -->
-    <!-- MAIN-MENU -->
-    <header class="gnb nav-down">
-      <!-- FIRST ROW -->
-      <div class="gnb-inner-first">
-        <button type="button" class="hamburger" onclick="$('.hide').toggle()">
+    <header>
+       <!-- FIRST ROW - HAMBURGER BUTTON, LOGO BUTTON, TRANSPARENT BUTTON -->
+      <div class="gnb-first_row">
+      <!-- 1.1.1. hamburger_button-large_css -->
+        <button type="button" id="first_row-hamburger_button-large_css" class="hamburger">
           <img src="../../../../static/img/base/hamburger_button.svg" alt="햄버거 버튼">
         </button>
-        <!-- for 반응형 웹 -햄버거 버튼 -->
+      <div class="sub-menu hide">
+        <div class="inner">
+          <ul class="group">
+            <li class="part-0">
+
+              <p class="title">INTRO</p>
+
+              <ul>
+                <div class="mass-introduction">
+                  <li><a href="#" class="title-second" onclick="">Vision</a></li>
+                  <li><a href="#" class="title-second" onclick="">Curriculum</a></li>
+                </div>
+              </ul>
+
+            </li>
+            <li class="part-1">
+
+              <p class="title" style="text-align: center;">이론</p>
+              <ul>
+                <div class="mass">
+                  <div class="sub-mass">
+                    <li class="underline"><a class="title-second" href="#" onclick="">언어</a></li>
+                    <div class="title-third">
+                      <ul>
+                        <li><a href="#">unmanaged</a></li>
+                        <li><a href="#">managed</a></li>
+
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="sub-mass">
+
+                    <li class="underline"><a class="title-second" href="../step2-child/step2-child.html" onclick="">데이터베이스</a></li>
+
+                    <div class="title-third">
+                      <ul>
+                        <li><a href="#">자본주의 이전의 시대</a></li>
+                        <div class="title-fourth">
+                          <ul>
+                            <li><a href="#">돈 그 자체가 부이다</a></li>
+                            <li><a href="#">돈 그 자체는 부가 이니다</a></li>
+                            <li><a href="#">옛날 사람들의 생활방식</a></li>
+                          </ul>
+                        </div>
+                        <div id="for_padding_top">
+                          <li><a href="#">자본주의 시대</a></li>
+                        </div>
+                        <div class="title-fourth">
+                          <ul>
+                            <li><a href="#">자본주의의 등장</a></li>
+                            <li><a href="#">자본주의의 본질</a></li>
+                            <li><a href="#">자본주의의 특징</a></li>
+                          </ul>
+                        </div>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="sub-mass">
+                    <li class="underline"><a class="title-second" href="../step3-student/step3-student.html"
+                        onclick="">운영체제</a></li>
+                    <div class="title-third">
+                      <ul>
+                        <li><a href="#">1교시</a></li>
+                        <li><a href="#">2교시</a></li>
+                        <li><a href="#">3교시</a></li>
+                        <li><a href="#">4교시 금본위제OXOX</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="sub-mass">
+
+                    <li class="underline"><a class="title-second" href="../step4-adult/step4-adult.html" onclick="">기타</a></li>
+
+                    <div class="title-third">
+                      <ul>
+                        <li><a href="#">미국</a></li>
+                        <li><a href="#">아랍</a></li>
+                        <li><a href="#">유럽</a></li>
+                        <li><a href="#">아시아</a></li>
+                        <div class="title-fourth">
+                          <ul>
+                            <li><a href="#">일본</a></li>
+                            <li><a href="#">한국</a></li>
+                            <li><a href="#">중국</a></li>
+                          </ul>
+                        </div>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+
+            </li>
+            <li class="part-2">
+
+              <p class="title">활용</p>
+              <ul>
+                <div class="mass">
+                  <div class="sub-mass">
+
+                    <li class="underline"><a class="title-second" href="#" onclick="">웹</a></li>
+
+                    <div class="title-third">
+                      <ul>
+                        <li><a href="#">프론트엔드</a></li>
+                        <div class="title-fourth">
+                          <ul>
+                            <li><a href="#">html</a></li>
+                            <li><a href="#">css</a></li>
+                            <li><a href="#">javascript</a></li>
+                          </ul>
+                        <li><a href="#">백엔드</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="sub-mass">
+
+                    <li class="underline"><a class="title-second" href="#" onclick="">인공지능</a></li>
+
+                    <div class="title-third">
+                      <ul>
+                        <li><a href="#">SUPERVISED learning</a></li>
+                        <li><a href="#">UNSUPERVISED learning</a></li>
+                        <li><a href="#">REINFORCEMENT learning</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    <!-- 1.1.2. hamburger_button-small_css -->
         <div class="sample-area sample-class">
           <div class="head">
             <div class="btn-menu">
               <img class="fas fa-bars" id="hamburger_button" src="../../../../static/img/base/hamburger_button.svg"
-                alt="t버튼">
+                alt="hamburger_button-small_css">
             </div>
           </div>
           <div class="side-menu">
@@ -47,40 +183,39 @@
                   </ul>
                 </ul>
                 <ul class="hamburger_topic">
-                  <li class="hamburger_topic-first">돈에 영향받는 나</li>
+                  <li class="hamburger_topic-first">이론</li>
                   <ul class="hamburger_topic-second">
-                    <li><a href="../step1-baby/step1-baby.html">아기로 태어난 돈</a></li>
-                    <li><a href="../step2-child/step2-child.html">어린이가 된 돈</a></li>
-                    <li><a href="../step3-student/step3-student.html">학생이 된 돈</a></li>
-                    <li><a href="../step4-adult/step4-adult.html">어른이 된 돈</a></li>
+                    <li><a href="../step1-baby/step1-baby.html">언어</a></li>
+                    <li><a href="../step2-child/step2-child.html">데이터베이스</a></li>
+                    <li><a href="../step3-student/step3-student.html">운영체제</a></li>
+                    <li><a href="../step4-adult/step4-adult.html">기타</a></li>
                   </ul>
                 </ul>
                 <ul class="hamburger_topic">
-                  <li class="hamburger_topic-first">내가 관리하는 돈</li>
+                  <li class="hamburger_topic-first">활용</li>
                   <ul class="hamburger_topic-second">
-                    <li>원리</li>
-                    <li>지갑</li>
+                    <li>웹</li>
+                    <li>인공지능</li>
                   </ul>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-        <!--  /for 반응형 웹- 햄버거 버튼 -->
+    <!-- 1.2. logo button -->
         <div class="logo_button">
-          <a href="tamplet2.html">
+          <a href="#">
             <img class="logo" src="../../../../static/img/base/logo-w.svg" alt="로고 버튼">
           </a>
         </div>
-        <div class="graph">
-          <!-- <a href="#"> -->
+    <!-- 1.3. transparent button -->
+        <div>
           <img src="../../../../static/img/base/transparent_squre.png" alt="투명 버튼">
-          <!-- </a> -->
         </div>
       </div>
 
-      <!-- SECOND ROW -->
-      <div class="gnb-inner-second">
+    <!-- SECOND ROW - TOPIC BUTTON -->
+      <div class="gnb-second_row">
         <div class="topic_button">
           <!-- NAVIGATION -->
           <div class="topic-class">
@@ -92,206 +227,32 @@
             </div>
             <div class="side-menu">
               <div class="topic-menu" id="opic">
-                <img id="opic_image" src="../../../img/opic-button.svg" alt="opic">
+                <img id="opic_image" src="../../../../static/img/base/opic-button.svg" alt="(t)opic 버튼">
               </div>
               <div class="menu-body">
                 <ul>
                   <div class="second--title">
-                    <li>아기로 태어난 돈</li>
+                    <li>인공지능</li>
                   </div>
                   <ul class="third--title">
                     <div class="third--title-height">
-                      <li>0. 돈의 탄생</li>
-
+                      <li>Ⅰ. SUPERVISED learning</li>
                     </div>
-
-
                     <div class="third--title-height">
-                      <li>1. 돈의 비주얼</li>
-                      <!-- <ul class="fourth--title">
-                        <li>Ⓞ 돈(금, 은) 그 자체가 부이다.</li>
-                        <li>➀ 돈(금, 은) 그 자체는 부가 아니다.</li>
-                        <li>➁ 옛날 사람들의 생활방식</li>
-
-                      </ul> -->
+                      <li>Ⅱ. UNSUPERVISED learning</li>
                     </div>
-
                     <div class="third--title-height">
-                      <li>2. 돈의 패션감각</li>
-
+                      <li>Ⅲ. REINFORCEMENT learning</li>
                       <ul class="fourth--title">
-                        <li>➀ 이동성</li>
-                        <!-- <ul class="fifth--title">
-                                <li>(1) 자본주의의 핵심엔진 #신용창출</li>
-                                <li>(2) 신용창출의 효과 #파이 키우기</li>
-                                <li>(3) 신용창출이 바꾼 생활방식</li>
-                              </ul> -->
-                        <li>➁ 저장성</li>
-                        <!-- <ul class="fifth--title">
-                                <li>(1) 공급과잉</li>
-                                <li>(2) 공급과잉 해결책 #수요 땅따먹기</li>
-                             
-                              </ul> -->
-                        <li>➂ 희소성</li>
                       </ul>
                     </div>
                   </ul>
                 </ul>
               </div>
-
-              <!--
-                EVENT BUTTON
-                <div class="graph_button">
-                   <a href="#">
-                        <img src="./korea.png" alt="EVENT 버튼" style="filter:grayscale(100%);">
-                    </a>
-                </div>
-                 -->
             </div>
-
-            <!-- SUB-MENU -->
-            <div class="sub-menu hide">
-              <div class="inner">
-                <ul class="group">
-                  <li class="part-0">
-
-                    <p class="title">INTRO</p>
-
-                    <ul>
-                      <div class="mass-introduction">
-                        <li><a href="#" class="title-second" onclick="">Vision</a></li>
-                        <li><a href="#" class="title-second" onclick="">Curriculum</a></li>
-                      </div>
-                    </ul>
-
-                  </li>
-                  <li class="part-1">
-
-                    <p class="title" style="text-align: center;">돈에 영향받는 나</p>
-                    <ul>
-                      <div class="mass">
-                        <div class="sub-mass">
-                          <li class="underline"><a class="title-second" href="#" onclick="">아기로 태어난 돈</a></li>
-                          <div class="title-third">
-                            <ul>
-                              <li><a href="#">비주얼</a></li>
-                              <li><a href="#">패션 감각</a></li>
-
-                            </ul>
-                          </div>
-                        </div>
-
-                        <div class="sub-mass">
-
-                          <li class="underline"><a class="title-second" href="../step2-child/step2-child.html"
-                              onclick="">어린이가 된 돈</a></li>
-
-                          <div class="title-third">
-                            <ul>
-                              <li><a href="#">자본주의 이전의 시대</a></li>
-                              <div class="title-fourth">
-                                <ul>
-                                  <li><a href="#">돈 그 자체가 부이다</a></li>
-                                  <li><a href="#">돈 그 자체는 부가 이니다</a></li>
-                                  <li><a href="#">옛날 사람들의 생활방식</a></li>
-                                </ul>
-                              </div>
-                              <div id="for_padding_top">
-                                <li><a href="#">자본주의 시대</a></li>
-                              </div>
-                              <div class="title-fourth">
-                                <ul>
-                                  <li><a href="#">자본주의의 등장</a></li>
-                                  <li><a href="#">자본주의의 본질</a></li>
-                                  <!-- <div class="fifth">
-                                                                <ul>
-                                                                    <li><a href="#">자본주의의 핵심엔진</a></li>
-                                                                    <li><a href="#">신용창출의 효과</a href="#"></li>
-                                                                    <li><a href="#">신용창출이 바꾼 생활방식</a></li>
-                                                                </ul>
-                                                            </div> -->
-                                  <li><a href="#">자본주의의 특징</a></li>
-                                </ul>
-                              </div>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="sub-mass">
-                          <li class="underline"><a class="title-second" href="../step3-student/step3-student.html"
-                              onclick="">학생이 된 돈</a></li>
-                          <div class="title-third">
-                            <ul>
-                              <li><a href="#">1교시</a></li>
-                              <li><a href="#">2교시</a></li>
-                              <li><a href="#">3교시</a></li>
-                              <li><a href="#">4교시 금본위제OXOX</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="sub-mass">
-
-                          <li class="underline"><a class="title-second" href="../step4-adult/step4-adult.html"
-                              onclick="">어른이 된 돈</a></li>
-
-                          <div class="title-third">
-                            <ul>
-                              <li><a href="#">미국</a></li>
-                              <li><a href="#">아랍</a></li>
-                              <li><a href="#">유럽</a></li>
-                              <li><a href="#">아시아</a></li>
-                              <div class="title-fourth">
-                                <ul>
-                                  <li><a href="#">일본</a></li>
-                                  <li><a href="#">한국</a></li>
-                                  <li><a href="#">중국</a></li>
-                                </ul>
-                              </div>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </ul>
-
-                  </li>
-                  <li class="part-2">
-
-                    <p class="title">내가 관리하는 돈</p>
-                    <ul>
-                      <div class="mass">
-                        <div class="sub-mass">
-
-                          <li class="underline"><a class="title-second" href="#" onclick="">원리</a></li>
-
-                          <div class="title-third">
-                            <ul>
-                              <li><a href="#">수익률, 위험률</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="sub-mass">
-
-                          <li class="underline"><a class="title-second" href="#" onclick="">돈 넣어둘 장소</a></li>
-
-                          <div class="title-third">
-                            <ul>
-                              <li><a href="#">예금</a></li>
-                              <li><a href="#">주식</a></li>
-                              <li><a href="#">채권</a></li>
-                              <li><a href="#">펀드</a></li>
-                              <li><a href="#">보험</a></li>
-                              <li><a href="#">부동산</a></li>
-                              <li><a href="#">파생상품</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </ul>
-
-                  </li>
-                </ul>
-              </div>
-            </div>
-
+          </div>
+        </div>
+      </div>
     </header>
 
     <!-- MAIN -->
