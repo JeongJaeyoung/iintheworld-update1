@@ -15,8 +15,11 @@ body{
 
 /* button 태그 */
 button{
-    padding: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 100;
     font-size: 30px;
+    padding: 10px;
+    
 }
 
 /* h 태그 */
