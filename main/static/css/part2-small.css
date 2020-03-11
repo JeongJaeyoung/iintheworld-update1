@@ -89,8 +89,6 @@ button{
 
 
 
-
-
 /* NAVIGATION BUTTON -Topic */
 .topic-class .side-menu {
     position: absolute;
@@ -126,7 +124,21 @@ button{
     padding:30px;
     background-color: #fdfdfd;
 }
+.second--title{
+    font-size: 40px;
+}
 
+.third--title > .third--title-height > li{
+    font-size: 35px;
+}
+
+.fourth--title > li{
+    font-size: 30px;
+}
+
+.fifth--title > li{
+    font-size: 25px;
+}
 /* MAIN */
 .title-background {
     height: 900px;
