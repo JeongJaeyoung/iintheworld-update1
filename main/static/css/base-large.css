@@ -1,6 +1,6 @@
 /* CSS 기본 설정 정하기 - 데스크탑 기준 */
 /* TAG 관련 기본 설정 (a, body, h, p) */
-/* CLASS 관련 기본 설정(border ,button, display, equation_size, location, padding, scroll, size, title) */
+/* CLASS 관련 기본 설정(border ,button, display, equation_size, location, margin, padding, scroll, size, title) */
 /* ID 관련 기본 설정 */
 
 /* TAG 관련 기본 설정 */
@@ -94,15 +94,20 @@ p{
 }
 
 /* equation_image_size 관련 수식이미지 사이즈 조절하기 frac은 분수 들어간 것 */
+/* 우선순위 sigma > partial > frac */
 .equa_size{
     height: 20px;
     margin: 5px;
 }
-.equa_size-sigma{
-    height: 50px;
+.equa_size-frac{    /* 분수 */
+    height: 35px;
     margin: 5px;
 }
-.equa_size-frac{
+.equa_size-partial{ /* 편미분 */
+    height: 40px;
+    margin: 5px;
+}
+.equa_size-sigma{   /* 시그마 */
     height: 45px;
     margin: 5px;
 }
@@ -125,6 +130,38 @@ p{
 .equa_size-matrix5{
     height: 125px
     margin: 5px;
+}
+
+/* margin 관련 */
+.margin-l10{
+    margin-left: 10px;
+}
+.margin-l20{
+    margin-left: 30px;
+}
+.margin-l30{
+    margin-left: 30px;
+}
+.margin-l40{
+    margin-left: 40px;
+}
+.margin-l50{
+    margin-left: 50px;
+}
+.margin-l60{
+    margin-left: 60px;
+}
+.margin-l70{
+    margin-left: 70px;
+}
+.margin-l80{
+    margin-left: 80px;
+}
+.margin-l90{
+    margin-left: 90px;
+}
+.margin-l100{
+    margin-left: 100px;
 }
 
 /* size 관련 */

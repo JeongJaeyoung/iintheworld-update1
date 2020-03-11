@@ -289,6 +289,7 @@
           <img class="equa_size"
             src="../../../../static/img/ai/supervised learning/linear_regression-step1-hypothesis.svg" alt="">
 
+            <br><br>
           <h3>step2. cost function</h3>
           <img class="equa_size-sigma"
             src="../../../../static/img/ai/supervised learning/linear_regression-step2-cost_function.svg"
@@ -360,36 +361,85 @@
                             \end{bmatrix}">
             </div>
             <div class="scroll">
-              <img class="equa_size-frac" class="equa_size-frac"
+              <img class="equa_size-frac"
                 src="../../../../static/img/ai/supervised learning/linear_regression-step2-cost_function_matrix3.svg"
                 alt="">
-
             </div>
           </div>
 
+          <br>
+          <br>
           <h3>step3. minimize costfuction</h3>
-          <img class="equa_size-frac"
+          <img class="equa_size-partial"
             src="../../../../static/img/ai/supervised learning/linear_regression-step3-minimize_cost_function1.svg"
             alt="\theta _{j}:= \theta_{j} - \alpha\frac{\partial }{\partial \theta_{j}}J(\theta)"><br>
           <img class="equa_size-sigma"
             src="../../../../static/img/ai/supervised learning/linear_regression-step3-minimize_cost_function2.svg"
             alt="\theta _{j}:= \theta_{j} - \alpha\frac{\partial }{\partial \theta_{j}}\frac{1}{2m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})^2"><br>
           <button id="button-linear-step3-proof" class="disp-block">···</button>
-          <div id="div-linear-step3-proof" class="disp-none">
+          <div id="div-linear-step3-proof" class="disp-none border-basic">
             <img class="equa_size-sigma"
               src="../../../../static/img/ai/supervised learning/linear_regression-step3-minimize_cost_function2_1.svg"
               alt="\frac{\partial }{\partial \theta_{j}}\frac{1}{2m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})^2"><br>
-              <img class="equa_size-frac"
+              <img class="equa_size-partial"
               src="../../../../static/img/ai/supervised learning/linear_regression-step3-minimize_cost_function2_2.svg"
               alt="=\frac{\partial}{\partial\theta_{j}}\frac{1}{2m}\{
                 (h_\theta(x^{(1)})-y^{(1)})^2
                 +(h_\theta(x^{(2)})-y^{(2)})^2
                 +\cdots
-                +(h_\theta(x^{(m)})-y^{(m)})^2\}">
+                +(h_\theta(x^{(m)})-y^{(m)})^2\}"><br>
+                <div class="scroll">
+                  <img class="equa_size-partial"
+                src="../../../../static/img/ai/supervised learning/linear_regression-step3-minimize_cost_function2_3.svg"
+                alt="=\frac{\partial}{\partial\theta_{j}}\frac{1}{2m}\{
+                  (\theta_{0}x_{0}^{(1)}+\theta_{1}x_{1}^{(1)}+\cdots+\theta_{j}x_{j}^{(1)}+\cdots+\theta_{n}x_{n}^{(1)}-y^{(1)})^2+
+                  (\theta_{0}x_{0}^{(2)}+\theta_{1}x_{1}^{(2)}+\cdots+\theta_{j}x_{j}^{(2)}+\cdots+\theta_{n}x_{n}^{(2)}-y^{(2)})^2+
+                  \cdots+
+                  (\theta_{0}x_{0}^{(m)}+\theta_{1}x_{1}^{(m)}+\cdots+\theta_{j}x_{j}^{(m)}+\cdots+\theta_{n}x_{n}^{(m)}-y^{(m)})^2
+                  \}"><br>
+                </div>
+                  <div class="scroll">
+                    <img class="equa_size-frac"
+                    src="../../../../static/img/ai/supervised learning/linear_regression-step3-minimize_cost_function2_4.svg"
+                    alt="=\frac{1}{2m}\{
+                      2(\theta_{0}x_{0}^{(1)}+\theta_{1}x_{1}^{(1)}+\cdots+\theta_{j}x_{j}^{(1)}+\cdots+\theta_{n}x_{n}^{(1)}-y^{(1)})\cdot x_{j}^{(1)}+
+                      2(\theta_{0}x_{0}^{(2)}+\theta_{1}x_{1}^{(2)}+\cdots+\theta_{j}x_{j}^{(2)}+\cdots+\theta_{n}x_{n}^{(2)}-y^{(2)})\cdot x_{j}^{(2)}+
+                      \cdots+
+                      2(\theta_{0}x_{0}^{(m)}+\theta_{1}x_{1}^{(m)}+\cdots+\theta_{j}x_{j}^{(m)}+\cdots+\theta_{n}x_{n}^{(m)}-y^{(m)})\cdot x_{j}^{(m)}
+                      \}">
+                  </div>
+                  <div class="scroll">
+                    <img class="equa_size-frac"
+                      src="../../../../static/img/ai/supervised learning/linear_regression-step3-minimize_cost_function2_5.svg"
+                      alt="=\frac{1}{m}\{
+                        (\theta_{0}x_{0}^{(1)}+\theta_{1}x_{1}^{(1)}+\cdots+\theta_{j}x_{j}^{(1)}+\cdots+\theta_{n}x_{n}^{(1)}-y^{(1)})\cdot x_{j}^{(1)}+
+                        (\theta_{0}x_{0}^{(2)}+\theta_{1}x_{1}^{(2)}+\cdots+\theta_{j}x_{j}^{(2)}+\cdots+\theta_{n}x_{n}^{(2)}-y^{(2)})\cdot x_{j}^{(2)}+
+                        \cdots+
+                        (\theta_{0}x_{0}^{(m)}+\theta_{1}x_{1}^{(m)}+\cdots+\theta_{j}x_{j}^{(m)}+\cdots+\theta_{n}x_{n}^{(m)}-y^{(m)})\cdot x_{j}^{(m)}
+                        \}">
+                  </div>
+                  <img class="equa_size-sigma"
+                  src="../../../../static/img/ai/supervised learning/linear_regression-step3-minimize_cost_function2_6.svg"
+                  alt="=\frac{1}{m}\sum_{i=1}^{m}
+                  (h_\theta(x^{(i)})-y^{(i)})\cdot x_{j}^{(i)}">
+                
           </div>
           <img class="equa_size-sigma"
             src="../../../../static/img/ai/supervised learning/linear_regression-step3-minimize_cost_function3.svg"
             alt="\theta _{j}:= \theta_{j} - \alpha\frac{1}{m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})\cdot x_{j}^{(i)}">
+            <button id="button-linear-step3-range" class="disp-block">···</button>
+            <div id="div-linear-step3-range" class="disp-none border-basic size-w3">
+              <img class="equa_size-sigma"
+              src="../../../../static/img/ai/supervised learning/linear_regression-step3-minimize_cost_function3_0.svg"
+              alt="\theta _{0}:= \theta_{0} - \alpha\frac{1}{m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})\cdot x_{0}^{(i)}"><br>
+              <img class="equa_size-sigma"
+              src="../../../../static/img/ai/supervised learning/linear_regression-step3-minimize_cost_function3_1.svg"
+              alt="\theta _{1}:= \theta_{1} - \alpha\frac{1}{m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})\cdot x_{1}^{(i)}"><br>
+              <img class="margin-l100" src="../../../../static/img/ai/supervised learning/vdots.svg" alt="\vdots"><br>
+              <img class="equa_size-sigma"
+              src="../../../../static/img/ai/supervised learning/linear_regression-step3-minimize_cost_function3_n.svg"
+              alt="\theta _{n}:= \theta_{n} - \alpha\frac{1}{m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})\cdot x_{n}^{(i)}">
+            </div>
 
           <h2>2. logistic regression</h2>
           <h3>step1. hypothesis</h3>

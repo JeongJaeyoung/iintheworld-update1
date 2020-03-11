@@ -11,3 +11,9 @@ $(function () {
         $("#div-linear-step3-proof").toggleClass("disp-none");
     });
 });
+// part3(computer)-chapter2(reality)-section2(ai)-supervised_learning-linear_regression-step3.range
+$(function () {
+    $("#button-linear-step3-range").on("click", function () {
+        $("#div-linear-step3-range").toggleClass("disp-none");
+    });
+});
