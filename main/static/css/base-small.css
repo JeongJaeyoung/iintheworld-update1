@@ -45,7 +45,7 @@ h6{
 /* CLASS 관련 기본 설정 */
 /* equation_image_size 관련 수식이미지 사이즈 조절하기 frac은 분수 들어간 것 */
 .equa_size{
-    height: 30px;
+    height: 40px;
     margin: 5px;
 }
 .equa_square{
@@ -53,36 +53,36 @@ h6{
     margin: 5px;
 }
 .equa_size-frac{
-    height: 60px;
+    height: 70px;
     margin: 5px;
 }
 .equa_size-partial{
-    height: 65px;
+    height: 75px;
     margin: 5px;
 }
 .equa_size-sigma{
-    height: 70px;
+    height: 80px;
     margin: 5px;
 }
 
 .equa_size-matrix1{
-    height: 40px;
+    height: 50px;
     margin: 5px;
 }
 .equa_size-matrix2{
-    height: 80px;
+    height: 90px;
     margin: 5px;
 }
 .equa_size-matrix3{
-    height: 120px;
+    height: 130px;
     margin: 5px;
 }
 .equa_size-matrix4{
-    height: 160px;
+    height: 170px;
     margin: 5px;
 }
 .equa_size-matrix5{
-    height: 200px
+    height: 210px
     margin: 5px;
 }
 
