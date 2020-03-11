@@ -21,17 +21,6 @@ button{
 }
 
 
-/* SECOND ROW */
-.gnb-second_row{
-    height: 100px;
-}
-#topic_button{
-    width: 100px;
-    height:40px;
-    margin: 0 0 0 20px;
-}
-
-
 /* HAMBURGER BUTTON */
 .group{
     display: none;
@@ -60,24 +49,33 @@ button{
     box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.05);
 }
 .hamburger_topic{
-    padding: 40px;
+    padding: 50px;
 }
 .hamburger_topic-first{
     font-weight: bold;
     font-size: 45px;
+    margin-bottom: 10px;
 
 }
 .hamburger_topic-second{
-    text-indent: 10px;
+    margin-left: 20px;
     font-size: 40px;
-    line-height: 1.4;
+    line-height: 1.6;
 }
 
 #hamburger_button{
     width: 100px;
 }
 
-
+/* SECOND ROW */
+.gnb-second_row{
+    height: 100px;
+}
+#topic_button{
+    width: 100px;
+    height:40px;
+    margin: 0 0 0 20px;
+}
 
 
 /* NAVIGATION BUTTON -Topic */
