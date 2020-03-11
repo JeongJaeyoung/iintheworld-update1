@@ -40,12 +40,18 @@ h6{
 }
 
 /* CLASS 관련 기본 설정 */
-/* equation_image_size 관련 */
+/* equation_image_size 관련 수식이미지 사이즈 조절하기 frac은 분수 들어간 것 */
 .equa_size{
     height: 30px;
 }
 .equa_size-frac{
     height: 70px;
+}
+.equa_size-matrix3{
+    height: 
+}
+.equa_size-matrix3{
+    height: 
 }
 
 /* ID 관련 기본 설정 */
