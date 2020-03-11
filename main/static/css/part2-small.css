@@ -16,16 +16,10 @@ button{
     margin: 0 0 0 20px;
 }
 #logo_button{
-    height: 40px;
-    padding: 0;
-    margin: 0;
+    width: 80px;
+
 }
-.graph{
-    width: 100px;
-    height: 40px;
-    padding: 0;
-    margin:0 20px 0 0;
-}
+
 
 /* SECOND ROW */
 .gnb-second_row{
@@ -83,9 +77,6 @@ button{
     width: 100px;
 }
 
-#logo_button{
-    width: 200px;
-}
 
 
 
