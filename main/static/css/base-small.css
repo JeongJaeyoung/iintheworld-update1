@@ -43,15 +43,35 @@ h6{
 /* equation_image_size 관련 수식이미지 사이즈 조절하기 frac은 분수 들어간 것 */
 .equa_size{
     height: 30px;
+    margin: 5px;
+}
+.equa_size-sigma{
+    height: 70px;
+    margin: 5px;
 }
 .equa_size-frac{
-    height: 70px;
+    height: 50px;
+    margin: 5px;
+}
+.equa_size-matrix1{
+    height: 40px;
+    margin: 5px;
+}
+.equa_size-matrix2{
+    height: 80px;
+    margin: 5px;
 }
 .equa_size-matrix3{
-    height: 
+    height: 120px;
+    margin: 5px;
 }
-.equa_size-matrix3{
-    height: 
+.equa_size-matrix4{
+    height: 160px;
+    margin: 5px;
+}
+.equa_size-matrix5{
+    height: 200px
+    margin: 5px;
 }
 
 /* ID 관련 기본 설정 */

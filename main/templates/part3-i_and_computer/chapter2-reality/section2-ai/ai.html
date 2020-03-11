@@ -286,33 +286,33 @@
           <img class="equa_size" src="../../../../static/img/ai/supervised learning/linear_regression-step1-hypothesis.svg" alt="">
 
           <h3>step2. cost function</h3>
-          <img class="equa_size-frac" src="../../../../static/img/ai/supervised learning/linear_regression-step2-cost_function.svg"
+          <img class="equa_size-sigma" src="../../../../static/img/ai/supervised learning/linear_regression-step2-cost_function.svg"
             alt="J(\theta )=\frac{1}{2m}\sum_{i=1}^{m}(h_{\theta }(x^{(i)})-y^{(i)})^2">
           <button id="button-linear-step2-matrix" class="disp-block">행렬로 나타내기 ···</button>
           <div id="div-linear-step2-matrix" class="pad-10 border-basic disp-none">
-            <img src="../../../../static/img/ai/supervised learning/linear_regression-step2-cost_function_matrix.svg"
+            <img class="equa_size-frac" src="../../../../static/img/ai/supervised learning/linear_regression-step2-cost_function_matrix.svg"
               alt="J(\Theta)=\frac{1}{2m}(X\theta-\vec{y})^{T}(X\theta-\vec{y})"><br>
-            <img src="../../../../static/img/ai/supervised learning/ingredient-matrix_x.svg" alt="X=\begin{bmatrix}
+            <img class="equa_size-matrix4" src="../../../../static/img/ai/supervised learning/ingredient-matrix_x.svg" alt="X=\begin{bmatrix}
               x_{0}^{(1)} & x_{1}^{(1)} & \cdots & x_{n}^{(1)}\\ 
               x_{0}^{(2)} & x_{1}^{(2)} & \cdots & x_{n}^{(2)}\\ 
                 &  & \vdots  & \\ 
               x_{0}^{(m)} & x_{1}^{(m)} & \cdots & x_{n}^{(m)}
               \end{bmatrix}">
-            <img src="../../../../static/img/ai/supervised learning/ingredient-matrix_theta.svg" alt="\theta = \begin{bmatrix}
+            <img class="equa_size-matrix4" src="../../../../static/img/ai/supervised learning/ingredient-matrix_theta.svg" alt="\theta = \begin{bmatrix}
               \theta_{0} \\ 
               \theta_{1}\\ 
               \vdots \\ 
               \theta_{n}\\ 
               
               \end{bmatrix}">
-            <img src="../../../../static/img/ai/supervised learning/ingredient-matrix_y.svg" alt="\vec{y}=\begin{bmatrix}
+            <img class="equa_size-matrix4" src="../../../../static/img/ai/supervised learning/ingredient-matrix_y.svg" alt="\vec{y}=\begin{bmatrix}
               y^{(1)}\\ 
               y^{(2)}\\ 
               \vdots \\ 
               y^{(m)}
               
               \end{bmatrix}">
-            <img src="../../../../static/img/ai/supervised learning/linear_regression-step2-cost_function_matrix1.svg"
+            <img class="equa_size-matrix4" src="../../../../static/img/ai/supervised learning/linear_regression-step2-cost_function_matrix1.svg"
               alt="J(\Theta)=\frac{1}{2m}\begin{bmatrix}
               x_{0}^{(1)}\theta_{0}+x_{1}^{(1)}\theta_{1}+\cdots+x_{n}^{(1)}\theta_{n}-y^{(1)}\\ 
               x_{0}^{(2)}\theta_{0}+x_{1}^{(2)}\theta_{1}+\cdots+x_{n}^{(2)}\theta_{n}-y^{(2)}\\ 
@@ -327,7 +327,7 @@
     
               \end{bmatrix}">
             <div class="scroll">
-              <img src="../../../../static/img/ai/supervised learning/linear_regression-step2-cost_function_matrix2.svg"
+              <img class="equa_size-matrix4" src="../../../../static/img/ai/supervised learning/linear_regression-step2-cost_function_matrix2.svg"
                 alt="J(\Theta)=\frac{1}{2m}\begin{bmatrix}
                   x_{0}^{(1)}\theta_{0}+x_{1}^{(1)}\theta_{1}+\cdots+x_{n}^{(1)}\theta_{n}-y^{(1)} &  x_{0}^{(2)}\theta_{0}+x_{1}^{(2)}\theta_{1}+\cdots+x_{n}^{(2)}\theta_{n}-y^{(2)} & \cdots & x_{0}^{(m)}\theta_{0}+x_{1}^{(m)}\theta_{1}+\cdots+x_{n}^{(m)}\theta_{n}-y^{(m)}
                   \end{bmatrix}\begin{bmatrix}
@@ -339,24 +339,24 @@
                             \end{bmatrix}">
             </div>
             <div class="scroll">
-              <img src="../../../../static/img/ai/supervised learning/linear_regression-step2-cost_function_matrix3.svg"
+              <img class="equa_size-frac" class="equa_size-frac" src="../../../../static/img/ai/supervised learning/linear_regression-step2-cost_function_matrix3.svg"
                 alt="">
 
             </div>
           </div>
 
           <h3>step3. minimize costfuction</h3>
-          <img src="../../../../static/img/ai/supervised learning/linear_regression-step3-minimize_cost_function1.svg"
+          <img class="equa_size-sigma" src="../../../../static/img/ai/supervised learning/linear_regression-step3-minimize_cost_function1.svg"
             alt="\theta _{j}:= \theta_{j} - \alpha\frac{\partial }{\partial \theta_{j}}J(\theta)"><br>
-          <img src="../../../../static/img/ai/supervised learning/linear_regression-step3-minimize_cost_function2.svg"
+          <img class="equa_size-sigma" src="../../../../static/img/ai/supervised learning/linear_regression-step3-minimize_cost_function2.svg"
             alt="\theta _{j}:= \theta_{j} - \alpha\frac{\partial }{\partial \theta_{j}}\frac{1}{2m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})^2"><br>
           <button id="button-linear-step3-proof" class="disp-block">···</button>
           <div id="div-linear-step3-proof" class="disp-none">
-            <img
+            <img class="equa_size-sigma"
               src="../../../../static/img/ai/supervised learning/linear_regression-step3-minimize_cost_function2_1.svg"
               alt="\frac{\partial }{\partial \theta_{j}}\frac{1}{2m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})^2">
           </div>
-          <img src="../../../../static/img/ai/supervised learning/linear_regression-step3-minimize_cost_function3.svg"
+          <img class="equa_size-sigma" src="../../../../static/img/ai/supervised learning/linear_regression-step3-minimize_cost_function3.svg"
             alt="\theta _{j}:= \theta_{j} - \alpha\frac{1}{m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})\cdot x_{j}^{(i)}">
 
           <h2>2. logistic regression</h2>
@@ -375,13 +375,7 @@
           <br><br><br><br><br><br><br><br><br><br>
 
  
-          <div style="font-family: 'Noto Sans KR', sans-serif; font-weight: 100; font-size:40px;">40px 굵게 적용asdf굵게 적용굵게 적용굵게 적용100다라</div>
 
-          <div style="font-family: 'Noto Sans KR', sans-serif; font-weight: 400; font-size:50px;">40px 굵게 적용굵게 적용굵게 적용굵게 적용400다라</div>
-          <div style="font-family: 'Noto Sans KR', sans-serif; font-weight: 700; font-size:50px;">40px 굵게 적용굵게 적용굵게 적용굵게 적용700다라</div>
-          <br>
-
-          Lorem ipsum dol한글은 어케 나오나블라블라은 어케 나오나블라블라은 어케 나오나블라블라은 어케 나오나블라블라or sit amet consectetur adipisicing elit. Animi corporis saepe necessitatibus consequuntur adipisci laudantium, nobis perspiciatis magni iure. Ea magnam officia natus neque tenetur nesciunt veritatis quasi illo necessitatibus? Perferendis architecto ratione enim minus dolore necessitatibus fugit eum vitae molestias aliquam. Placeat temporibus omnis illum sunt facere nam eum nulla reiciendis fuga quos, culpa totam laborum velit cupiditate a pariatur corrupti aperiam voluptatibus porro eveniet accusantium dignissimos possimus numquam! Nisi deserunt repudiandae impedit ex accusantium dolorem dolorum quam saepe earum nobis dolor eligendi quisquam, obcaecati distinctio eum dicta a maxime rerum commodi voluptatum. Debitis veniam, rerum qui ducimus quisquam soluta quasi inventore alias porro voluptate aliquid eaque quis, odio est, voluptatibus labore eligendi aut doloribus esse. Laboriosam harum maxime veniam, consectetur vitae aliquam ut aperiam tempora. Quam ut sit atque mollitia quisquam commodi possimus quis magnam explicabo iusto voluptatem, vero, veniam voluptate et laboriosam! Autem ut cumque consequatur asperiores sapiente et quo temporibus, eius aliquam dicta quos dolor neque non blanditiis? Consequatur corrupti nisi consectetur assumenda eos odit libero, minus laboriosam, in illum itaque minima dignissimos tempora excepturi, neque doloremque! Neque natus maiores tempora laborum veritatis provident optio culpa. Sed quisquam nisi voluptates! Eligendi eum numquam fugit, tenetur ipsa, tempora laborum explicabo temporibus facere sunt reprehenderit asperiores suscipit quia qui totam, ipsam eos. Nostrum delectus, doloribus temporibus obcaecati voluptas error dolorum vel nihil, reiciendis nam impedit amet laudantium esse? Explicabo inventore repudiandae, delectus suscipit labore, reprehenderit dolor cupiditate, commodi ullam voluptatum ducimus necessitatibus in minus! Voluptates deleniti dolorum unde officia, nihil quisquam recusandae pariatur neque architecto dignissimos vel nam aliquam quasi possimus ab dolorem temporibus asperiores maxime facilis cumque. Pariatur, nisi laboriosam illum nesciunt assumenda cupiditate! Ea, doloremque corrupti. Debitis eum sint, aspernatur laborum magnam nihil ipsa quae nisi minus illo asperiores incidunt, esse enim aliquam, harum cupiditate molestiae ducimus in. Eius ratione facilis magni distinctio temporibus laborum a. Officiis in beatae delectus maxime. Porro, veritatis harum et aperiam perferendis quis qui aliquid, consectetur similique pariatur odit voluptatum repellat soluta, quaerat aliquam excepturi distinctio aspernatur explicabo vitae sed dolorem id fugiat. Voluptatibus reprehenderit animi consequatur distinctio veniam tempore possimus illo, facilis omnis atque! Dolorem explicabo ipsum autem nulla cum doloremque deleniti architecto soluta, beatae magnam magni. Provident ipsum atque ratione quae delectus odio architecto molestias aliquam quo magni reiciendis modi recusandae minus facilis harum, ipsa, maxime, pariatur voluptatibus deserunt illo. Fugiat vel necessitatibus totam doloremque maxime excepturi, deleniti consequatur eligendi fuga voluptate? Nulla consequatur nesciunt quia asperiores doloribus quisquam modi at maiores quam voluptatem perferendis molestiae quaerat quibusdam atque dolor ex praesentium sunt, numquam blanditiis! Accusamus voluptatem hic sunt exercitationem ab accusantium ratione vitae voluptates ipsum vel dicta, aliquid provident ad! Non libero rem ea aliquam delectus, repellendus assumenda! Ipsa dolor suscipit quod laborum maiores, quo odio corporis impedit sunt! Cumque pariatur eos mollitia saepe nam amet assumenda maiores, a expedita odit magnam nulla molestias aperiam debitis in eius totam. Quibusdam iure accusantium totam nostrum, libero doloremque. Non cum maxime at quae? Maiores obcaecati doloremque necessitatibus modi et, eaque ex laborum animi odit enim, itaque, culpa magni consectetur? Error, quibusdam ex! Nam, non quidem aliquam hic, dicta laborum error in fugit esse repudiandae sunt perferendis nemo necessitatibus, harum voluptatum consectetur recusandae! Ratione totam obcaecati facere nulla earum laudantium accusantium perferendis esse qui nostrum rem harum, cupiditate ut odit illum nemo hic suscipit dignissimos sunt modi praesentium tempora aut sed doloribus. Mollitia asperiores dolor libero. Quibusdam id amet optio ipsa voluptates alias eaque dignissimos soluta ullam, ex repudiandae quaerat? Fuga magnam commodi odit, quaerat vero soluta obcaecati qui mollitia veniam vel est minima ipsa assumenda deleniti error id rem odio tenetur cumque quos illo eveniet? Repudiandae consectetur ratione sunt at deleniti fugiat aspernatur dolorem quae molestiae, aperiam esse accusantium officia aliquam blanditiis corporis, non molestias omnis aut totam dicta? Optio, dicta aliquid? Quaerat voluptatum impedit iste assumenda provident? Veritatis suscipit quo harum facilis libero! Similique expedita odit deserunt a quibusdam, mollitia, voluptatem unde, fugit nemo quasi itaque voluptatum! Aspernatur, error provident. Corporis, quia, sed recusandae impedit numquam expedita, fugiat ratione dicta porro molestiae voluptatibus possimus distinctio vitae explicabo culpa accusamus debitis enim soluta! Commodi odit laboriosam pariatur, sunt qui assumenda facilis aliquid hic sapiente sint ducimus incidunt dolorum non saepe, quidem suscipit culpa cum ratione est quis at? Exercitationem blanditiis nostrum ut alias enim, voluptatibus hic deleniti aspernatur, accusamus magnam possimus voluptate cumque esse minus officia numquam nisi assumenda quisquam asperiores ullam explicabo provident. Placeat aliquid possimus esse quis unde, pariatur error, laborum deleniti a, quos ex molestiae ipsa est? Tempore culpa voluptatem recusandae facere, commodi sapiente error a vero delectus odio cupiditate velit nulla quod dicta quos nihil tempora exercitationem similique vel rerum libero excepturi? Dolorem expedita possimus tempora non maiores doloribus earum nam, voluptatum cupiditate illo nemo animi esse ea quia sint explicabo asperiores facere cumque eius dolore! Iste, doloribus enim placeat consequuntur explicabo culpa pariatur. Quod laudantium iure, minima id necessitatibus eum deserunt quis soluta ratione ipsa aperiam voluptate mollitia provident doloribus dolores eligendi distinctio ipsum ullam quisquam. Culpa corrupti dolorem cumque voluptatem veniam unde excepturi, facilis temporibus molestias perspiciatis optio accusamus asperiores delectus deserunt est. Enim assumenda unde totam sunt ab obcaecati non eos voluptates, iste, veritatis nihil possimus rem perspiciatis aliquam reprehenderit quo fugit vel saepe? Voluptas explicabo quas corrupti necessitatibus perferendis consequuntur, sed mollitia quae ratione, repellendus minima dolor, cum eos autem incidunt laboriosam porro quasi! Recusandae repellat eligendi quasi esse labore? Et deserunt, eius necessitatibus delectus facere voluptatem rem veniam reiciendis cum quis ab, quos officiis, sint neque esse repellendus non similique. Accusamus doloremque quas sapiente minus temporibus? Quia, quae explicabo voluptas sit, sed delectus rem ipsa maxime tempore eum, similique numquam maiores ex cupiditate recusandae rerum earum. Aliquid, adipisci sed quos tempora eos corporis necessitatibus quasi accusamus? Beatae modi aperiam maiores. Commodi maiores beatae eos, amet eligendi perspiciatis vero. Similique in enim, aperiam suscipit adipisci blanditiis, veniam assumenda doloribus facilis eius quibusdam sequi unde? Explicabo velit temporibus vero quos beatae, accusantium, consequuntur officiis nisi cupiditate fugit possimus veniam architecto adipisci eligendi minima!
         </div>
       </div>
 
