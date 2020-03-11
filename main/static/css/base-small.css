@@ -1,6 +1,6 @@
 /* CSS 기본 설정 정하기 - 모바일 기준 */
 /* TAG 관련 기본 설정 (a, body, h, p) */
-/* CLASS 관련 기본 설정(border ,button, display, location, padding, scroll, size, title) */
+/* CLASS 관련 기본 설정(border ,button, display, equation_image_size, location, padding, scroll, size, title) */
 /* ID 관련 기본 설정 */
 
 /* TAG 관련 기본 설정 */
@@ -40,5 +40,12 @@ h6{
 }
 
 /* CLASS 관련 기본 설정 */
+/* equation_image_size 관련 */
+.equa_size{
+    height: 30px;
+}
+.equa_size-frac{
+    height: 70px;
+}
 
 /* ID 관련 기본 설정 */
