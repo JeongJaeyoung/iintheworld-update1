@@ -1,0 +1,36 @@
+/* CSS 기본 설정 정하기 - 모바일 기준 */
+/* TAG 관련 기본 설정 (a, body, h, p) */
+/* CLASS 관련 기본 설정(border ,button, display, location, padding, scroll, size, title) */
+/* ID 관련 기본 설정 */
+
+/* TAG 관련 기본 설정 */
+/* body 태그 */
+body{
+    font-size: 50px; /* 기본 글자 크기 */
+    line-height: 2;  /* 기본 줄 높이  */
+    color: #2d2d2d;
+}
+
+/* h 태그 */
+h1{
+    font-size: 25px;
+}
+h2{
+    font-size: 24px;
+}
+h3{
+    font-size: 23px;
+}
+h4{
+    font-size: 22px;
+}
+h5{
+    font-size: 21px;
+}
+h6{
+    font-size: 20px;
+}
+
+/* CLASS 관련 기본 설정 */
+
+/* ID 관련 기본 설정 */
