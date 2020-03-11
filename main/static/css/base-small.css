@@ -13,6 +13,12 @@ body{
     color: #2d2d2d;
 }
 
+/* button 태그 */
+button{
+    padding: 10px;
+    font-size: 30px;
+}
+
 /* h 태그 */
 h1{
     font-size: 50px;
