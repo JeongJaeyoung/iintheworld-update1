@@ -1,6 +1,6 @@
 /* CSS 기본 설정 정하기 - 데스크탑 기준 */
 /* TAG 관련 기본 설정 (a, body, h, p) */
-/* CLASS 관련 기본 설정(border ,button, display, location, padding, scroll, size, title) */
+/* CLASS 관련 기본 설정(border ,button, display, equation_size, location, padding, scroll, size, title) */
 /* ID 관련 기본 설정 */
 
 /* TAG 관련 기본 설정 */
@@ -91,6 +91,40 @@ p{
 }
 .pad-20{
     padding: 20px;
+}
+
+/* equation_image_size 관련 수식이미지 사이즈 조절하기 frac은 분수 들어간 것 */
+.equa_size{
+    height: 20px;
+    margin: 5px;
+}
+.equa_size-sigma{
+    height: 50px;
+    margin: 5px;
+}
+.equa_size-frac{
+    height: 45px;
+    margin: 5px;
+}
+.equa_size-matrix1{
+    height: 25px;
+    margin: 5px;
+}
+.equa_size-matrix2{
+    height: 50px;
+    margin: 5px;
+}
+.equa_size-matrix3{
+    height: 75px;
+    margin: 5px;
+}
+.equa_size-matrix4{
+    height: 100px;
+    margin: 5px;
+}
+.equa_size-matrix5{
+    height: 125px
+    margin: 5px;
 }
 
 /* size 관련 */
