@@ -445,6 +445,15 @@
               src="../../../../static/img/ai/supervised learning/linear_regression-step3-minimize_cost_function3_n.svg"
               alt="\theta _{n}:= \theta_{n} - \alpha\frac{1}{m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})\cdot x_{n}^{(i)}">
             </div>
+            <p>
+              미분해서 나온 기울기는 양수가 될 수도, 음수가 될 수도 있다. 
+              즉, 어느 방향으로도 움직일 수 있다는 것이다.
+              그러므로 기울기값이 cost function을 최소로 만드는 지점으로의 방향을 알려주는 것이다.
+            </p>
+            <p>
+              그리고 learning rate인 알파값은 cost function의 최소지점을 향해 가는 걸음의 크기를 결정한다.
+              성큼성큼 걸어서 갈지, 살금살금 걸어서 갈지를 결정해준다.
+            </p>
 
           <h2>2. logistic regression</h2>
           <h3>step1. hypothesis</h3>
@@ -457,7 +466,7 @@
             neural network를 이용하면 여러 문제들을 해결하는 것이 가능한데, 그 중 대표적인 것이 XOR문제를 풀 수 있게 된다.
 
           </p>
-          <img class="margin-center disp-block pad-50" src="../../../../static/img/ai/supervised learning/neural_network-basic.png" alt="neural_network-basic">
+          <img class="image-center" src="../../../../static/img/ai/supervised learning/neural_network-basic.png" alt="neural_network-basic">
           <p>
             그럼 이 상황을 수식을 이용해서 구체적으로 표현해보자.
           </p>
@@ -493,6 +502,17 @@
 
           <h3>step2. cost function</h3>
           <h3>step3. minimize costfuction</h3>
+          <p>
+            cost function을 최소화하기 위해 cost function을 미분하는데,
+            그 미분을 하는 대상인 cost function이 여러 층을 지나가면서, 함수가 또 다른 함수를 계속 만나게되서 
+            식이 복잡해지는 것이다. 즉, cost function은 합성함수가 될 수 밖에 없고,
+            우리는 <strong>합성함수 미분을 하는 것</stron>이다.
+            합성함수를 미분하는 과정을 보면 hidden layer와 output layer 사이에서의 미분을 통해  Θ를 업데이트하고,
+            다음 input layer와 hidden layer 사이에서의 미분을 통해 Θ를 업데이트 하는 것이다.
+            이 모습이 마치 output layer에서 input layer까지 차근차근 반대 방향으로 미분해나가는 모습이라서
+            backpropagation이라는 이름이 붙은 것이다.
+          </p>
+          <img class="image-center" src="../../../../static/img/ai/supervised learning/neural_network-step3-image.png" alt="neural_network-step3-image.png">
 
           <h1>Ⅱ. UNSUPERVISED learning</h1>
 
@@ -500,7 +520,7 @@
           <br><br><br><br><br><br><br><br><br><br>
 
 
-
+a
         </div>
       </div>
 

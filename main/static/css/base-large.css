@@ -59,6 +59,10 @@ h6{
 p{
     text-indent: 5px; /*들여쓰기 기본 설정 */
 }
+/* strong 태그 */
+strong{
+    font-weight: 400;
+}
 
 /* CLASS 관련 기본 설정 */
 /* border 관련 */
@@ -101,7 +105,7 @@ p{
     height: 20px;
     margin: 5px;
 }
-.equa_squre{        /* 제곱 */
+.equa_square{        /* 제곱 */
     height: 30px;
     margin: 5px;
 }
@@ -139,10 +143,11 @@ p{
 }
 
 /* image 관련 */
-.margin-center{
-  
+.image-center{
+    display: block;
     margin: 0 auto;
-
+    width: 700px;
+    padding: 50px;
 }
 
 /* margin 관련 */
