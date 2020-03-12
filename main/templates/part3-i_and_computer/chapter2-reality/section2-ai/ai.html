@@ -506,13 +506,39 @@
             cost function을 최소화하기 위해 cost function을 미분하는데,
             그 미분을 하는 대상인 cost function이 여러 층을 지나가면서, 함수가 또 다른 함수를 계속 만나게되서 
             식이 복잡해지는 것이다. 즉, cost function은 합성함수가 될 수 밖에 없고,
-            우리는 <strong>합성함수 미분을 하는 것</stron>이다.
+            우리는 <strong>합성함수 미분을 하는 것</strong>이다.
             합성함수를 미분하는 과정을 보면 hidden layer와 output layer 사이에서의 미분을 통해  Θ를 업데이트하고,
             다음 input layer와 hidden layer 사이에서의 미분을 통해 Θ를 업데이트 하는 것이다.
             이 모습이 마치 output layer에서 input layer까지 차근차근 반대 방향으로 미분해나가는 모습이라서
             backpropagation이라는 이름이 붙은 것이다.
           </p>
           <img class="image-center" src="../../../../static/img/ai/supervised learning/neural_network-step3-image.png" alt="neural_network-step3-image.png">
+          <p>
+            위의 그림을 차근차근 이해해보도록 하자.
+          </p>
+          <div class="disp-flex scroll">
+            <div class="pad-20 border-r">
+              <img class="equa_size-6" src="../../../../static/img/ai/supervised learning/nueral-step3-1.svg" alt="a_{k}=\frac{1}{e^{-(\Theta_{k0}
+              +\Theta_{k1}x_{1}
+              +\Theta_{k2}x_{2}
+              +\cdots
+              +\Theta_{kj}x_{j}
+              +\cdots+
+              +\Theta_{kn}x_{n})}}">
+            </div>
+            <div class="pad-20">
+              <img class="equa_size-6" src="../../../../static/img/ai/supervised learning/nueral-step3-2.svg" alt="b_{l}=\frac{1}{e^{-(\Theta_{l0}
+              +\Theta_{l1}a_{1}
+              +\Theta_{l2}a_{2}
+              +\cdots
+              +\Theta_{lk}a_{k}
+              +\cdots+
+              +\Theta_{lo}a_{n})}}">
+            </div>
+          </div>
+          <h4>1. hidden layer와 output layer 사이에서의 Θ 업데이트하기</h4>
+
+          <h4>2. input layer와 hidden layer 사이에서의 Θ 업데이트하기</h4>
 
           <h1>Ⅱ. UNSUPERVISED learning</h1>
 

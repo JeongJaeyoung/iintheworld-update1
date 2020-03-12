@@ -141,12 +141,38 @@ strong{
     height: 125px
     margin: 5px;
 }
+/* '.equa_size-숫자'가 데스크탑과 모바일이 다르므로 붙어있는 번호가 사이즈와 직접적인 관계없음 */
+.equa_size-5{
+    height: 50px;
+    margin: 5px;
+}
+.equa_size-6{
+    height: 60px;
+    margin: 5px;
+}
+.equa_size-7{
+    height: 70px;
+    margin: 5px;
+}
+.equa_size-8{
+    height: 80px;
+    margin: 5px;
+}
+.equa_size-9{
+    height: 90px;
+    margin: 5px;
+}
+.equa_size-10{
+    height: 100px;
+    margin: 5px;
+}
+
 
 /* image 관련 */
 .image-center{
     display: block;
     margin: 0 auto;
-    width: 700px;
+    width: 600px;
     padding: 50px;
 }
 

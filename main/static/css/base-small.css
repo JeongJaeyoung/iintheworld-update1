@@ -49,7 +49,7 @@ h6{
     margin: 5px;
 }
 .equa_square{
-    height: 50px;
+    height: 60px;
     margin: 5px;
 }
 .equa_size-frac{
@@ -57,11 +57,11 @@ h6{
     margin: 5px;
 }
 .equa_size-partial{
-    height: 75px;
+    height: 80px;
     margin: 5px;
 }
 .equa_size-sigma{
-    height: 80px;
+    height: 90px;
     margin: 5px;
 }
 
@@ -70,24 +70,49 @@ h6{
     margin: 5px;
 }
 .equa_size-matrix2{
-    height: 90px;
+    height: 100px;
     margin: 5px;
 }
 .equa_size-matrix3{
-    height: 130px;
+    height: 150px;
     margin: 5px;
 }
 .equa_size-matrix4{
-    height: 170px;
+    height: 200px;
     margin: 5px;
 }
 .equa_size-matrix5{
-    height: 210px
+    height: 250px
+    margin: 5px;
+}
+/* '.equa_size-숫자'가 데스크탑과 모바일이 다르므로 붙어있는 번호가 사이즈와 직접적인 관계없음 */
+.equa_size-5{
+    height: 100px;
+    margin: 5px;
+}
+.equa_size-6{
+    height: 120px;
+    margin: 5px;
+}
+.equa_size-7{
+    height: 140px;
+    margin: 5px;
+}
+.equa_size-8{
+    height: 160px;
+    margin: 5px;
+}
+.equa_size-9{
+    height: 180px;
+    margin: 5px;
+}
+.equa_size-10{
+    height: 200px;
     margin: 5px;
 }
 
 /* image 관련 */
 .image-center{
-    width: 850px;
+    width: 800px;
 }
 /* ID 관련 기본 설정 */
