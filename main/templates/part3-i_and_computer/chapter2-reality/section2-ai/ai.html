@@ -287,12 +287,12 @@
           <h2>0. 기본</h2>
           <p>
             m개의 데이터 세트 하나를 받으면
-            θ 한 개에 따른 cost 값이 한 개 나온다.
+            θ 한 개에 따른 cost 값이 여러 개 생겨서 그래프로 나온다.
           </p>
 
           <h2>1. linear regression</h2>
           <p>
-            구해야하는 θ가 1개이고데이터 세트가 1개여도, cost function은 2차함수를 그린다.
+            구해야하는 θ가 1개이고 데이터 세트가 1개여도, cost function은 2차함수를 그린다.
             데이터 세트가 많아질 수록 2차함수의 모양이 바뀔 뿐이다. cost function의 cost가 커진다.
             패널티를 주는 대상이 많아지는 것이다.
             데이터 세트가 한 개(x값 1개, y값 1개)이면 처벌을 할 놈이 하나 밖에 없는 것이고,
@@ -594,7 +594,132 @@ x_{n}^{(m)}\theta_{n})\\
                 [y^{(i)}\frac{\partial}{\partial\theta_{j}}log(h_\theta(x^{(i)}))+
                 (1-y^{(i)})\frac{\partial}{\partial\theta_{j}}log(1-h_\theta(x^{(i)})]">
               </div>
-              
+              <div class="scroll">
+                <img src="../../../../static/img/ai/supervised learning/logistic-step3-proof3.svg" alt="
+                =
+                -\frac{1}{m}
+                \sum_{i=1}^{m}
+                [y^{(i)}
+                \frac{\frac{\partial}{\partial\theta_{j}}h_\theta(x^{(i)})}{h_\theta(x^{(i)})ln10}+
+                (1-y^{(i)})
+                \frac{\frac{\partial}{\partial\theta_{j}}(1-h_\theta(x^{(i)}))}{1-h_\theta(x^{(i)})ln10}]">
+
+              </div>
+              <div class="scroll">
+                <img src="../../../../static/img/ai/supervised learning/logistic-step3-proof4.svg" alt="
+                =
+                -
+                \frac{1}{ln10}
+                \frac{1}{m}
+                \sum_{i=1}^{m}
+                [
+                \frac{y^{(i)}\frac{\partial}{\partial\theta_{j}}\sigma(\theta^{T}x^{(i)})}
+                {h_\theta(x^{(i)})}+
+                \frac{(1-y^{(i)})\frac{\partial}{\partial\theta_{j}}(1-\sigma(\theta^{T}x^{(i)}))}
+                {1-h_\theta(x^{(i)})}]">
+
+              </div>
+              <div class="scroll">
+                <img src="../../../../static/img/ai/supervised learning/logistic-step3-proof5.svg" alt="=
+                -
+                \frac{1}{ln10}
+                \frac{1}{m}
+                \sum_{i=1}^{m}
+                [
+                      \frac{y^{(i)}\sigma(\theta^{T}x^{(i)})
+                (1-\sigma(\theta^{T}x^{(i)}))
+                \frac{\partial}{\partial \theta_{j}}\theta^{T}x^{(i)}}
+                                {h_\theta(x^{(i)})}+
+
+                \frac{-(1-y^{(i)})
+                \sigma(\theta^{T}x^{(i)})
+                (1-\sigma(\theta^{T}x^{(i)})
+                \frac{\partial}{\partial\theta_{j}}
+                \theta^{T}x^{(i)}}
+                {1-h_\theta(x^{(i)})}]">
+
+              </div>
+              <div class="scroll">
+                <img src="../../../../static/img/ai/supervised learning/logistic-step3-proof6.svg" alt="=
+                -
+                \frac{1}{ln10}
+                \frac{1}{m}
+                \sum_{i=1}^{m}
+                [
+                \frac{y^{(i)}
+                h_{\theta}(x^{(i)})
+                (1-h_{\theta}(x^{(i)}))
+                \frac{\partial}{\partial \theta_{j}}\theta^{T}x^{(i)}}
+                                {h_\theta(x^{(i)})}+
+                
+                 \frac{-(1-y^{(i)})
+                h_{\theta}(x^{(i)})
+                (1-h_{\theta}(x^{(i)}))
+                \frac{\partial}{\partial\theta_{j}}
+                \theta^{T}x^{(i)}}
+                {1-h_\theta(x^{(i)})}]">
+
+              </div>
+              <div class="scroll">
+                <img src="../../../../static/img/ai/supervised learning/logistic-step3-proof7.svg" alt="-
+                \frac{1}{ln10}
+                \frac{1}{m}
+                \sum_{i=1}^{m}
+                [y^{(i)}
+                
+                (1-h_{\theta}(x^{(i)}))
+x_{j}^{(i)}-
+                (1-y^{(i)})h_{\theta}(x^{(i)})x_{j}^{(i)}]
+                ">
+
+              </div>
+              <div class="scroll">
+                <img src="../../../../static/img/ai/supervised learning/logistic-step3-proof8.svg" alt="-
+                \frac{1}{ln10}
+                \frac{1}{m}
+                \sum_{i=1}^{m}
+                [y^{(i)}
+                (1-h_{\theta}(x^{(i)}))
+                -
+                (1-y^{(i)})h_{\theta}(x^{(i)})]x_{j}^{(i)}
+                ">
+
+              </div>
+              <div class="scroll">
+                <img src="../../../../static/img/ai/supervised learning/logistic-step3-proof9.svg" alt="-
+                \frac{1}{ln10}
+                \frac{1}{m}
+                \sum_{i=1}^{m}
+                [y^{(i)}
+                -y^{(i)}h_{\theta}(x^{(i)})
+                -
+                h_{\theta}(x^{(i)})+
+                y^{(i)}h_{\theta}(x^{(i)})]x_{j}^{(i)}
+                ">
+
+              </div>
+              <div class="scroll">
+                <img src="../../../../static/img/ai/supervised learning/logistic-step3-proof10.svg" alt="-
+                \frac{1}{ln10}
+                \frac{1}{m}
+                \sum_{i=1}^{m}
+                [y^{(i)}
+                -
+                h_{\theta}(x^{(i)})
+                ]x_{j}^{(i)}
+                ">
+
+              </div>
+              <div class="scroll">
+                <img src="../../../../static/img/ai/supervised learning/logistic-step3-proof11.svg" alt="=\frac{1}{ln10}
+                \frac{1}{m}
+                \sum_{i=1}^{m}
+                [
+                h_{\theta}(x^{(i)}-y^{(i)})
+                ]x_{j}^{(i)}
+                "><br>
+                ln10은 상수이므로 α에 녹이는 것이 가능하다.
+              </div>
 
             </div>
             <img class="equa_size-sigma"
