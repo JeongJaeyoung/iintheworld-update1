@@ -3,13 +3,16 @@
 /* CLASS 관련 기본 설정(border ,button, display, equation_size, image, location, margin, padding, scroll, size, title) */
 /* ID 관련 기본 설정 */
 /* 수식관련 css 이용법
+
 1. img 태그(수식)의 높이를 class로 지정해주기
 2. img 태그를 div태그로 감싸고, scroll 기능 넣어서 화면 넘치면 스크롤 되게 해주기
 3. img 태그의 alt 속성에는 해당 수식의 latex를 넣어서 언제든지 수정가능하게 하기
+
 4. 토글 버튼에는 margin-b10을 해줘야 아래쪽에 여유가 생겨서 보기 좋다
 5. 토글 버튼에는 js설정을 잘 해주자.
+
 6. 토글해서 나오는 div 태그에는 pad-10을 해주어야 수식 여러줄이 여유있어 보인다
-7. 토글해서 나오는 div 태그에는 size-숫자를 데스크탑과 모바일에 각각 사이즈가 적용된다.
+7. 토글해서 나오는 div 태그에는 'size-숫자 or auto'를 데스크탑과 모바일에 각각 사이즈가 적용된다.
 8. 토글해서 나오는 div 태그에는 border-basic을 해줘야 테두리가 생긴다.
 */
 
@@ -328,6 +331,9 @@ strong{
 }
 .size-10{
     width: 1000px;
+}
+.size-auto{ /* 태그이 속성이 display=block이면 화면의 가로 최대치에 맞춰줌 */
+    width: auto;
 }
 
 .size-w1{
