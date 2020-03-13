@@ -116,7 +116,10 @@ h6{
     width: 800px;
 }
 
-/* '.size-숫자'가 데스크탑과 모바일이 다르므로 붙어있는 번호가 사이즈와 직접적인 관계없음 */
+/* 
+'.size-숫자'가 데스크탑과 모바일이 다르므로 붙어있는 번호가 사이즈와 직접적인 관계없음 
+데스크탑에서 600px를 넘어가면 모바일에선 900px으로 최대치를 잡아주자. 그러고 scroll 만들면된다.
+*/
 
 .size-1{
     width: 200px;
@@ -134,19 +137,19 @@ h6{
     width: 1000px;
 }
 .size-6{
-    width: px;
+    width: 900px;
 }
 .size-7{
-    width: 1400px;
+    width: 900px;
 }
 .size-8{
-    width: 1600px;
+    width: 900px;
 }
 .size-9{
-    width: 1800px;
+    width: 900px;
 }
 .size-10{
-    width: 1000px;
+    width: 900px;
 }
 
 /* ID 관련 기본 설정 */
