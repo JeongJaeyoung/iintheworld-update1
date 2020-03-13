@@ -151,5 +151,8 @@ h6{
 .size-10{
     width: auto;
 }
+.size-auto{
+    width: auto;
+}
 
 /* ID 관련 기본 설정 */
