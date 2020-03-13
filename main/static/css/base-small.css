@@ -45,7 +45,7 @@ h6{
 /* CLASS 관련 기본 설정 */
 /* equation_image_size 관련 수식이미지 사이즈 조절하기 frac은 분수 들어간 것 */
 .equa_size{
-    height: 40px;
+    height: 35px;
     margin: 5px;
 }
 .equa_square{
@@ -108,6 +108,26 @@ h6{
 }
 .equa_size-10{
     height: 200px;
+    margin: 5px;
+}
+.equa_size-11{
+    height: 220px;
+    margin: 5px;
+}
+.equa_size-12{
+    height: 240px;
+    margin: 5px;
+}
+.equa_size-13{
+    height: 260px;
+    margin: 5px;
+}
+.equa_size-14{
+    height: 280px;
+    margin: 5px;
+}
+.equa_size-15{
+    height: 300px;
     margin: 5px;
 }
 

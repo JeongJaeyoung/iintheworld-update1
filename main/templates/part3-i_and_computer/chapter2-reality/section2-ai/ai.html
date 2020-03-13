@@ -485,32 +485,128 @@
               alt="\theta _{n}:= \theta_{n} - \alpha\frac{1}{m}\sum_{i=1}^{m}(h_{\theta}(x^{(i)})-y^{(i)})\cdot x_{n}^{(i)}">
             </div>
             <button id="button-linear-step3-matrix" class="disp-block margin-b10">행렬로 나타내기···</button>
-            <div id="div-linear-step3-matrix" class="disp-none border-basic size-6 pad-10">    
+            <div id="div-linear-step3-matrix" class="disp-none border-basic size-auto pad-10">    
               <div class="scroll">
-                <img class="equa_size-matrix5" src="../../../../static/img/ai/supervised learning/linear-step1-matrix.svg" alt="h_{\theta}(x)=\begin{bmatrix}
-                \theta_{0}&
-                \theta_{1}&
-                \theta_{2}&
-                \cdots&
-                \theta_{n}
-                \end{bmatrix}
+                <img class="equa_size" src="../../../../static/img/ai/supervised learning/linear-step3-matrix0.svg" alt="\theta:=\theta-\alpha\bigtriangledown J(\theta)">
+              </div>
+              <div class="scroll">
+                <img class="equa_size-30" src="../../../../static/img/ai/supervised learning/linear-step3-matrix1.svg" alt="\bigtriangledown J(\theta)=
                 \begin{bmatrix}
-                x_{0}\\
-                x_{1}\\
-                x_{2}\\
+                \frac{\partial J(\theta)}{\partial \theta_{0}}\\
+                \frac{\partial J(\theta)}{\partial \theta_{0}}\\
                 \vdots\\
-                x_{n}
+                \frac{\partial J(\theta)}{\partial \theta_{0}}\\
                 \end{bmatrix}
-                =
-                \begin{bmatrix}
-                \theta_{0}x_{0}+
-                \theta_{1}x_{1}+
-                \theta_{2}x_{2}+
+                ">
+              </div>
+              <div class="scroll">
+                <img class="equa_size-5" src="../../../../static/img/ai/supervised learning/linear-step3-matrix2.svg" alt="\frac{\partial J(\theta)}{\partial \theta_{j}}=\frac{1}{m}\vec{x_{j}}(X\theta-\vec{y})
+                ">
+              </div>
+              <div class="scroll">
+                <img class="equa_size-12" src="../../../../static/img/ai/supervised learning/linear-step3-matrix3.svg" alt="">
+              </div>
+              <div class="scroll">
+                <img class="equa_size-3" src="../../../../static/img/ai/supervised learning/linear-step3-matrix4.svg" alt="=\frac{1}{m}\begin{bmatrix}
+                x_{j}^{(1)}(x_{0}^{(1)}\theta_{0}+x_{1}^{(1)}\theta_{1}+\cdots+x_{n}^{(1)}\theta_{n}-y^{(1)})+
+                x_{j}^{(2)}(x_{0}^{(2)}\theta_{0}+x_{2}^{(1)}\theta_{1}+\cdots+x_{n}^{(2)}\theta_{n}-y^{(2)})+
                 \cdots+
-                \theta_{n}x_{n}
+                x_{j}^{(m)}(x_{0}^{(m)}\theta_{0}+x_{1}^{(m)}\theta_{1}+\cdots+x_{n}^{(m)}\theta_{n}-y^{(m)})
                 \end{bmatrix}">
               </div>
+              <div class="scroll">
+                <img class="equa_size-15" src="../../../../static/img/ai/supervised learning/linear-step3-matrix5.svg" alt="\bigtriangledown J(\theta)=
+                \begin{bmatrix}
+                \frac{\partial J(\theta)}{\partial \theta_{0}}\\
+                \frac{\partial J(\theta)}{\partial \theta_{0}}\\
+                \vdots\\
+                \frac{\partial J(\theta)}{\partial \theta_{0}}\\
+                \end{bmatrix}
+=\frac{1}{m}
+\begin{bmatrix}
+x_{0}^{(1)} & x_{0}^{(2)} & \cdots & x_{0}^{(m)}\\
+x_{1}^{(1)} & x_{1}^{(2)} & \cdots & x_{1}^{(m)}\\
+\vdots & \vdots & \cdots  & \vdots\\
+x_{n}^{(1)} & x_{n}^{(2)} & \cdots & x_{n}^{(m)}\\
+\end{bmatrix}
+
+\begin{bmatrix}
+x_{0}^{(1)}\theta_{0}+x_{1}^{(1)}\theta_{1}+\cdots+x_{n}^{(1)}\theta_{n}-y^{(1)}\\
+x_{0}^{(2)}\theta_{0}+x_{1}^{(2)}\theta_{1}+\cdots+x_{n}^{(2)}\theta_{n}-y^{(2)}\\
+\vdots\\
+x_{0}^{(m)}\theta_{0}+x_{1}^{(m)}\theta_{1}+\cdots+x_{n}^{(m)}\theta_{n}-y^{(m)}\\
+\end{bmatrix}">
               </div>
+              <div class="scroll">
+                <img class="equa_size-15" src="../../../../static/img/ai/supervised learning/linear-step3-matrix6.svg" alt="=\frac{1}{m}
+                \begin{bmatrix}
+                x_{0}^{(1)}
+                (x_{0}^{(1)}\theta_{0}+
+                x_{1}^{(1)}\theta_{1}+
+                x_{n}^{(1)}\theta_{n}-y^{(1)})+
+                
+                x_{0}^{(2)}
+                (x_{0}^{(2)}\theta_{0}+
+                x_{1}^{(2)}\theta_{1}+
+                \cdots+
+                x_{n}^{(2)}\theta_{n}-y^{(2)})+
+                
+                \cdots+
+                
+                x_{0}^{(m)}
+                (x_{0}^{(m)}\theta_{0}+
+                x_{1}^{(m)}\theta_{1}+
+                \cdots+
+                x_{n}^{(m)}\theta_{n}-y^{(m)})
+                \\
+                
+                x_{1}^{(1)}
+                (x_{0}^{(1)}\theta_{0}+
+                x_{1}^{(1)}\theta_{1}+
+                x_{n}^{(1)}\theta_{n}-y^{(1)})+
+                
+                x_{1}^{(2)}
+                (x_{0}^{(2)}\theta_{0}+
+                x_{1}^{(2)}\theta_{1}+
+                \cdots+
+                x_{n}^{(2)}\theta_{n}-y^{(2)})+
+                
+                \cdots+
+                
+                x_{1}^{(m)}
+                (x_{0}^{(m)}\theta_{0}+
+                x_{1}^{(m)}\theta_{1}+
+                \cdots+
+                x_{n}^{(m)}\theta_{n}-y^{(m)})
+                \\
+                \vdots
+                \\
+                
+                x_{n}^{(1)}
+                (x_{0}^{(1)}\theta_{0}+
+                x_{1}^{(1)}\theta_{1}+
+                x_{n}^{(1)}\theta_{n}-y^{(1)})+
+                
+                x_{n}^{(2)}
+                (x_{0}^{(2)}\theta_{0}+
+                x_{1}^{(2)}\theta_{1}+
+                \cdots+
+                x_{n}^{(2)}\theta_{n}-y^{(2)})+
+                
+                \cdots+
+                
+                x_{n}^{(m)}
+                (x_{0}^{(m)}\theta_{0}+
+                x_{1}^{(m)}\theta_{1}+
+                \cdots+
+                x_{n}^{(m)}\theta_{n}-y^{(m)})
+                \\
+                \end{bmatrix}">
+              </div>
+              <div class="scroll">
+                <img class="equa_size-15" src="../../../../static/img/ai/supervised learning/linear-step3-matrix7.svg" alt="\theta:=\theta-\frac{\alpha}{m}X^{T}(X\theta-\vec{y})">
+              </div>
+            </div>
             <p>
               미분해서 나온 기울기는 양수가 될 수도, 음수가 될 수도 있다. 
               즉, 어느 방향으로도 움직일 수 있다는 것이다.
@@ -561,7 +657,8 @@ x_{n}^{(m)}\theta_{n})\\
           <button id="button-logistic-step2-matrix" class="disp-block margin-b10">행렬로 나타내기···</button>
           <div id="div-logistic-step2-matrix" class="disp-none border-basic size-auto pad-10">    
             <img src="../../../../static/img/ai/supervised learning/logistic-step2-matrix0.svg" alt="J(\theta)=\frac{1}{m}(-y^{T}log(h)-(1-y)^{T}log(1-h))"><br>
-            <div class="scroll"><img src="../../../../static/img/ai/supervised learning/logistic-step2-matrix1.svg" alt="J(\theta)=\frac{1}{m}\cdot
+            <div class="scroll">
+              <img src="../../../../static/img/ai/supervised learning/logistic-step2-matrix1.svg" alt="J(\theta)=\frac{1}{m}\cdot
               -
               \begin{bmatrix}
               y^{(1)}
@@ -600,7 +697,8 @@ x_{n}^{(m)}\theta_{n})\\
                             \vdots\\
                            log(1-g(\theta_{0}x_{0}^{(m)} + \theta_{1}x_{1}^{(m)} + \cdots + 
               \theta_{n}x_{n}^{(m)}))\\ 
-                            \end{bmatrix}"></div><br>
+                            \end{bmatrix}">
+                          </div><br>
                             <div class="scroll"><img src="../../../../static/img/ai/supervised learning/logistic-step2-matrix2.svg" alt="J(\theta)=-\frac{1}{m}[
                               y^{(1)}
                               log(g(\theta_{0}x_{0}^{(1)} + \theta_{1}x_{1}^{(1)} + \cdots + \theta_{n}x_{n}^{(1)}))+
