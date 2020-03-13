@@ -82,7 +82,7 @@ h6{
     margin: 5px;
 }
 .equa_size-matrix5{
-    height: 250px
+    height: 500px
     margin: 5px;
 }
 /* '.equa_size-숫자'가 데스크탑과 모바일이 다르므로 붙어있는 번호가 사이즈와 직접적인 관계없음 */
@@ -134,7 +134,7 @@ h6{
     width: 1000px;
 }
 .size-6{
-    width: 900px;
+    width: px;
 }
 .size-7{
     width: 1400px;
@@ -146,7 +146,7 @@ h6{
     width: 1800px;
 }
 .size-10{
-    width: 2000px;
+    width: 1000px;
 }
 
 /* ID 관련 기본 설정 */
