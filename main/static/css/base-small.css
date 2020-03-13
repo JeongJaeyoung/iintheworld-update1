@@ -128,13 +128,13 @@ h6{
     width: 500px;
 }
 .size-3{
-    width: 900px;
+    width: 600px;
 }
 .size-4{
-    width: 700px;
+    width: 800px;
 }
 .size-5{
-    width: 800px;
+    width: auto;
 }
 .size-6{
     width: auto;
