@@ -21,6 +21,13 @@ $(function () {
     });
 });
 
+// part3(computer)-chapter2(reality)-section2(ai)-supervised_learning-linear_regression-step3.matrix
+$(function () {
+    $("#button-linear-step3-matrix").on("click", function () {
+        $("#div-linear-step3-matrix").toggleClass("disp-none");
+    });
+});
+
 // part3(computer)-chapter2(reality)-section2(ai)-supervised_learning-linear_regression-step3.range
 $(function () {
     $("#button-linear-step3-range").on("click", function () {
