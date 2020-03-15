@@ -141,6 +141,37 @@ h6{
 데스크탑에서 600px를 넘어가면 모바일에선 auto으로 display=block이니까 최대치를 잡아주자. 그러고 scroll 만들면된다.
 */
 
+.size-h1{
+    height: 100px;
+}
+.size-h2{
+    height: 200px;
+}
+.size-h3{
+    height: 300px;
+}
+.size-h4{
+    height: 400px;
+}
+.size-h5{
+    height: 500px;
+}
+.size-h6{
+    height: 600px;
+}
+.size-h7{
+    height: 700px;
+}
+.size-h8{
+    height: 800px;
+}
+.size-h9{
+    height: 900px;
+}
+.size-h10{
+    height: 1000px;
+}
+
 .size-1{
     width: auto;
 }
