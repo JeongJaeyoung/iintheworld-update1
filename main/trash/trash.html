@@ -1,0 +1,31 @@
+<img src="../../../../static/img/ai/supervised learning/neural-step3-1.svg" class="scroll" alt="\frac{\partial}{\partial\Theta_{kj}}J(\Theta)=
+\frac{\partial J(\Theta)}{\partial b_{l}^{(i)}}
+\cdot
+\frac{\partial b_{l}^{(i)}}{\partial z_{l}^{(i)}}
+\cdot
+\frac{\partial z_{l}^{(i)}}{\partial \Theta_{lk}}
+\cdot
+\frac{\partial \Theta_{lk}}{\partial z_{l}^{(i)}}
+\cdot
+\frac{\partial z_{l}^{(i)}}{\partial a_{k}^{(i)}}
+\cdot
+\frac{\partial a_{k}^{(i)}}{\partial z_{k}^{(i)}}
+\cdot
+\frac{\partial z_{k}^{(i)}}{\partial \Theta_{kj}}
+\cdot"><br>
+
+<img src="../../../../static/img/ai/supervised learning/neural-step3-1_1.svg" alt="\frac{\partial J(\Theta)}{\partial b_{l}^{(i)}}=\frac{1}{m}(b_{i}^{(i)}-y_{l}^{(i)})"><br>
+<img src="../../../../static/img/ai/supervised learning/neural-step3-1_2.svg" alt="\frac{\partial b_{l}^{(i)}}{\partial z_{l}^{(i)}}=b_{l}^{(i)}(1-b_{l}^{(i)})"><br>
+<img src="../../../../static/img/ai/supervised learning/neural-step3-1_3.svg" alt="\frac{\partial z_{l}^{(i)}}{\partial \Theta_{lk}}=a_{k}^{(i)}"><br>
+<img src="../../../../static/img/ai/supervised learning/neural-step3-1_4.svg" alt="\frac{\partial \Theta_{lk}}{\partial z_{l}^{(i)}} = 1"><br>
+<img src="../../../../static/img/ai/supervised learning/neural-step3-1_5.svg" alt="   \frac{\partial z_{l}^{(i)}}{\partial a_{k}^{(i)}}=\Theta_{lk}^{(i)}"><br>
+<img src="../../../../static/img/ai/supervised learning/neural-step3-1_6.svg" alt="\frac{\partial z_{l}^{(i)}}{\partial a_{k}^{(i)}}=a_{k}^{(i)}(1-a_{k}^{(i)})"><br>
+<img src="../../../../static/img/ai/supervised learning/neural-step3-1_7.svg" alt="\frac{\partial z_{k}^{(i)}}{\partial \Theta_{kj}}=x_{j}^{(i)}"><br>
+
+<img src="../../../../static/img/ai/supervised learning/neural-step3-2.svg" alt="\Theta_{kj}:=\Theta_{kj}-\alpha\frac{1}{m}\sum_{i=1}^{m}x_{j}^{(i)}
+a_{k}^{(i)}
+(1-a_{k}^{(i)})
+\sum_{l=1}^{p}
+\Theta_{lk}b_{l}^{(i)}
+(1-b_{l}^{(i)})
+(y_{l}^{(i)}-b_{l}^{(i)})">

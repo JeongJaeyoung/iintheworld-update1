@@ -956,41 +956,77 @@ x_{j}^{(i)}-
             다음 input layer와 hidden layer 사이에서의 미분을 통해 Θ를 업데이트 하는 것이다.
             이 모습이 마치 output layer에서 input layer까지 차근차근 반대 방향으로 미분해나가는 모습이라서
             backpropagation이라는 이름이 붙은 것이다.
-          </p>
+          </p>  
+          
           <div class="scroll"><img class="size-h7" src="../../../../static/img/ai/supervised learning/neural-backpropagation.png" alt="backpropagation image"></div>
+          <div class="scroll"><img class="equa_size-5" src="../../../../static/img/ai/supervised learning/neural-step3-proof-0.svg" alt="\frac{\partial J(\theta)}{\partial \theta^{(L-2)}} = 
+            (a^{(L)}-y)\theta^{(L-1)}a^{(L-1)}(1-a^{(L-1)})a^{(L-2)}"></div>
+            <button id="button-neural-step3-range" class="disp-block margin-b10">···</button>
+            <div id="div-neural-step3-range" class="disp-none border-basic size-w7 pad-10">
+              <div class="scroll">
+                <img class="equa_size-5" src="../../../../static/img/ai/supervised learning/neural-step3-proof-1.svg" alt="\frac{\partial J(\theta)}{\partial \theta^{(L-2)}} = 
+                \frac{\partial J(\theta)}{\partial  a^{(L)}}
+                \cdot
+                \frac{\partial  a^{(L)}}{\partial  z^{(L)}}
+                \cdot
+                \frac{\partial  z^{(L)}}{\partial  a^{(L-1)}}
+                \cdot
+                \frac{\partial  a^{(L-1)}}{\partial  z^{(L-1)}}
+                \cdot
+                \frac{\partial  z^{(L-1)}}{\partial  \theta^{(L-2)}}">
+              </div>
+              <div class="scroll">
+                <img class="equa_size-5" src="../../../../static/img/ai/supervised learning/neural-step3-proof-1_1_1.svg" alt="①
+                \:\:\:\frac{\partial J(\theta)}{\partial a^{(L)}} = \frac{-y}{a^{(L)}}+\frac{(1-y)}{(1-a^{(L)})}">
+              </div>
+              <div class="scroll">
+                <div class="disp-flex">
+                  <img class="equa_size-5" src="../../../../static/img/ai/supervised learning/neural-step3-proof-1_2_1.svg" alt="②
+                  \:\:\:
+                   \frac{\partial a^{(L)}}{\partial z^{(L)}}"><div>&nbsp&nbsp&nbsp구하기</div>
+                </div>
+              </div>
+              <div class="scroll">
+                <img class="equa_size-5" src="../../../../static/img/ai/supervised learning/neural-step3-proof-1_2_2.svg" alt="a^{(L)}=\frac{1}{1+e^{-z^{(L)}}}">
+              </div>
+              <div class="scroll">
+                <img class="equa_size-6" src="../../../../static/img/ai/supervised learning/neural-step3-proof-1_2_3.svg" alt="\frac{\partial a^{(L)}}{\partial z^{(L)}}=
+                \frac{e^{-z^{(L)}}}{(1+e^{-z^{(L)}})^2}=
+                \frac{1}{(1+e^{-z^{(L)}})}
+                \cdot
+                \frac{e^{-z^{(L)}}}{(1+e^{-z^{(L)}})}=
+                \frac{1}{(1+e^{-z^{(L)}})}
+                \cdot
+                \frac{(1+e^{-z^{(L)}})-1}{(1+e^{-z^{(L)}})}=
+                a^{(L)}(1-a^{(L)})">
+              </div>
+              <div class="disp-flex">
+                <img class="equa_size-5 disp-inline" src="../../../../static/img/ai/supervised learning/neural-step3-proof-1_3_1.svg" alt="③
+                \:\:\:
+                 \frac{\partial z^{(L)}}{\partial \theta^{(L-1)}}"><div>&nbsp&nbsp&nbsp구하기</div>
+              </div>
+              <div class="scroll">
+                <img class="equa_size-2" src="../../../../static/img/ai/supervised learning/neural-step3-proof-1_3_2.svg" alt="z^{(L)}=a^{(L-1)}\theta^{(L-1)}">
+              </div>
+              <div class="scroll">
+                <img class="equa_size-5" src="../../../../static/img/ai/supervised learning/neural-step3-proof-1_3_3.svg" alt="\frac{\partial z^{(L)}}{\partial a^{(L-1)}}=\theta^{(L-1)}">
+              </div>
+              <div class="scroll">
+                <img class="equa_size-5" src="../../../../static/img/ai/supervised learning/neural-step3-proof-1_4.svg" alt="④ \:\:\:
+                \frac{\partial a^{(L-1)}}{\partial z^{(L-1)}}=
+                a^{(L-1)}(1-a^{(L-1)})">
+              </div>
+              <div class="scroll">
+                <img class="equa_size-5" src="../../../../static/img/ai/supervised learning/neural-step3-proof-1_5.svg" alt="⑤ \:\:\:
+                \frac{\partial  z^{(L-1)}}{\partial  \theta^{(L-2)}}=a^{(L-2)}">
+              </div>
+            </div>
+            
           <img src="../../../../static/img/ai/supervised learning/neural-step3.svg" alt="\Theta_{kj}:=\Theta_{kj}-\alpha\frac{\partial}{\partial\Theta_{kj}}J(\Theta)">
           <button id="button-neural-step3-range" class="disp-block margin-b10">···</button>
             <div id="div-neural-step3-range" class="disp-none border-basic size-w7 pad-10">
-              <img src="../../../../static/img/ai/supervised learning/neural-step3-1.svg" class="scroll" alt="\frac{\partial}{\partial\Theta_{kj}}J(\Theta)=
-              \frac{\partial J(\Theta)}{\partial b_{l}^{(i)}}
-              \cdot
-              \frac{\partial b_{l}^{(i)}}{\partial z_{l}^{(i)}}
-              \cdot
-              \frac{\partial z_{l}^{(i)}}{\partial \Theta_{lk}}
-              \cdot
-              \frac{\partial \Theta_{lk}}{\partial z_{l}^{(i)}}
-              \cdot
-              \frac{\partial z_{l}^{(i)}}{\partial a_{k}^{(i)}}
-              \cdot
-              \frac{\partial a_{k}^{(i)}}{\partial z_{k}^{(i)}}
-              \cdot
-              \frac{\partial z_{k}^{(i)}}{\partial \Theta_{kj}}
-              \cdot"><br>
-              <img src="../../../../static/img/ai/supervised learning/neural-step3-1_1.svg" alt="\frac{\partial J(\Theta)}{\partial b_{l}^{(i)}}=\frac{1}{m}(b_{i}^{(i)}-y_{l}^{(i)})"><br>
-              <img src="../../../../static/img/ai/supervised learning/neural-step3-1_2.svg" alt="\frac{\partial b_{l}^{(i)}}{\partial z_{l}^{(i)}}=b_{l}^{(i)}(1-b_{l}^{(i)})"><br>
-              <img src="../../../../static/img/ai/supervised learning/neural-step3-1_3.svg" alt="\frac{\partial z_{l}^{(i)}}{\partial \Theta_{lk}}=a_{k}^{(i)}"><br>
-              <img src="../../../../static/img/ai/supervised learning/neural-step3-1_4.svg" alt="\frac{\partial \Theta_{lk}}{\partial z_{l}^{(i)}} = 1"><br>
-              <img src="../../../../static/img/ai/supervised learning/neural-step3-1_5.svg" alt="   \frac{\partial z_{l}^{(i)}}{\partial a_{k}^{(i)}}=\Theta_{lk}^{(i)}"><br>
-              <img src="../../../../static/img/ai/supervised learning/neural-step3-1_6.svg" alt="\frac{\partial z_{l}^{(i)}}{\partial a_{k}^{(i)}}=a_{k}^{(i)}(1-a_{k}^{(i)})"><br>
-              <img src="../../../../static/img/ai/supervised learning/neural-step3-1_7.svg" alt="\frac{\partial z_{k}^{(i)}}{\partial \Theta_{kj}}=x_{j}^{(i)}"><br>
             </div>
-              <img src="../../../../static/img/ai/supervised learning/neural-step3-2.svg" alt="\Theta_{kj}:=\Theta_{kj}-\alpha\frac{1}{m}\sum_{i=1}^{m}x_{j}^{(i)}
-              a_{k}^{(i)}
-              (1-a_{k}^{(i)})
-              \sum_{l=1}^{p}
-              \Theta_{lk}b_{l}^{(i)}
-              (1-b_{l}^{(i)})
-              (y_{l}^{(i)}-b_{l}^{(i)})">
+             
 
           
 

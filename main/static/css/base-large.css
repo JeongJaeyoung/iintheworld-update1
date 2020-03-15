@@ -156,6 +156,22 @@ strong{
     margin: 5px;
 }
 /* '.equa_size-숫자'가 데스크탑과 모바일이 다르므로 붙어있는 번호가 사이즈와 직접적인 관계없음 */
+.equa_size-1{
+    height: 10px;
+    margin: 5px;
+}
+.equa_size-2{
+    height: 20px;
+    margin: 5px;
+}
+.equa_size-3{
+    height: 30px;
+    margin: 5px;
+}
+.equa_size-4{
+    height: 40px;
+    margin: 5px;
+}
 .equa_size-5{
     height: 50px;
     margin: 5px;
