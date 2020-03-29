@@ -56,6 +56,13 @@ $(function () {
     });
 });
 
+// part3(computer)-chapter2(reality)-section2(ai)-supervised_learning-neural-step3-proof
+$(function () {
+    $("#button-neural-step3-proof").on("click", function () {
+        $("#div-neural-step3-proof").toggleClass("disp-none");
+    });
+});
+
 // part3(computer)-chapter2(reality)-section2(ai)-supervised_learning-neural-step3-range
 $(function () {
     $("#button-neural-step3-range").on("click", function () {

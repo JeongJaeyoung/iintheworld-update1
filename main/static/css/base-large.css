@@ -1,6 +1,6 @@
 /* CSS 기본 설정 정하기 - 데스크탑 기준 */
 /* TAG 관련 기본 설정 (a, body, h, p) */
-/* CLASS 관련 기본 설정(border ,button, display, equation_size, image, location, margin, padding, scroll, size, title) */
+/* CLASS 관련 기본 설정(border ,button, circle, display, equation_size, image, location, margin, padding, scroll, size, title) */
 /* ID 관련 기본 설정 */
 /* 수식관련 css 이용법
 
@@ -311,6 +311,9 @@ strong{
 }
 .pad-50{
     padding: 50px;
+}
+.pad-100{
+    padding: 100px;
 }
 
 
